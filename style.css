@@ -1,1 +1,96 @@
-/*feuille de style page d'accueil*/
+@font-face {
+  font-family: 'embrionic';
+  src: url("font/embrionic55.otf") format("otf"), url("font/embrionic55swash.otf") format("otf"), url("font/embrionic85.otf") format("otf"), url("font/embrionic85swash.otf") format("otf");
+}
+
+@font-face {
+  font-family: 'devonshire';
+  src: url("font/devonshire-regular.ttf") format("ttf");
+}
+
+title {
+  display: none;
+}
+
+* {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  background-color: #569c87;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #fdcb46;
+  font-size: 3em;
+  font-family: 'embrionic', Verdana, sans-serif;
+}
+
+.menu {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu__note {
+  background-color: #fdc0dc;
+  height: 400px;
+  width: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.menu__note .fa-music {
+  color: orange;
+  font-size: 4em;
+  text-decoration: none;
+}
+
+.menu__note .h2 {
+  text-decoration: none;
+  font-size: 2em;
+  font-family: 'devonshire', Verdana, sans-serif;
+}
+
+.menu__note p {
+  text-decoration: none;
+  font-size: 4em;
+}
+
+.menu__chic {
+  background-color: #ecbef0;
+  border: 2px solid #724c70;
+  height: 400px;
+  width: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
