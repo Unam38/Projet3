@@ -1,78 +1,167 @@
 @font-face {
-    font-family: 'embrionic';
-    src: url('font/embrionic55.otf') format('otf'),
-         url('font/embrionic55swash.otf') format('otf'),
-         url('font/embrionic85.otf') format('otf'),
-         url('font/embrionic85swash.otf') format('otf');
+    font-family: 'defonarts_bold';
+    src: url('font/defonarts bold.otf') format('otf');
+        font-weight: normal;
+        font-style: normal;
 }
 @font-face {
-    font-family: 'devonshire';
-    src: url('font/devonshire-regular.ttf') format('ttf'),
+    font-family: 'embrionic';
+    src: url('font/embrionic55.otf') format('otf'),
+    url('font/embrionic55swash.otf') format('otf'),
+    url('font/embrionic85.otf') format('otf'),
+    url('font/embrionic85swash.otf') format('otf');
+        font-weight: normal;
+        font-style: normal;
 }
+@font-face {
+    font-family: 'appsil';
+    src: url('font/appsilbi.ttf') format('ttf'),
+    url('font/appsili.ttf') format('ttf'),
+    url('font/appsilr.ttftf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'charissil-b';
+    src: url('font/charissil-b.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'croissantone-regular';
+    src: url('font/croissantone-regular.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'dancing-script';
+    src: url('font/dancing-script.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'devonshire-regular';
+    src: url('font/devonshire-regular.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'handlee-regular';
+    src: url('font/Handlee-Regular.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'kaushanscript-regular';
+    src: url('font/kaushanscript-regular.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'perfect_font_cc';
+    src: url('font/perfect_font_cc.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'PTSerif';
+    src: url('font/PTSerif-Bold.ttf') format('ttf'),
+    url('font/PTSerif-Bolditalic.ttf') format('ttf'),
+    url('font/PTSerif-Italic.ttf') format('ttf'),
+    url('font/PTSerif-Regular.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'sfcartoonisthand';
+    src: url('font/sfcartoonisthand.ttf') format('ttf'),
+    url('font/sfcartoonisthand-bold.ttf') format('ttf'),
+    url('font/sfcartoonisthand-bolditalic.ttf') format('ttf'),
+    url('font/sfcartoonisthand-italic.ttf') format('ttf'),
+    url('font/sfcartoonisthandsc.ttf') format('ttf'),
+    url('font/sfcartoonisthandsc-bold.ttf') format('ttf'),
+    url('font/sfcartoonisthandsc-boldital.ttf') format('ttf'),
+    url('font/sfcartoonisthandsc-italic.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+}
+/*variables couleurs pour le header et footer*/
+$fond: #579c87;
+$lettre: #fdcb46;
+/*variables couleurs pour la note enchantée*/
+$lettre_note: #3c1218;
+$fond_note: #fcdfdb;
+$grad1_note: #f04c5f;
+$grad2_note: #f6916a;
+/*variables couleurs pour le chic a la française*/
+$lettre_chic1: #c67412;
+$lettre_chic2: #A56799;
+$lettre_chic3: #6e4ccc;
+/*variables couleurs pour le délice des papilles*/
+$delice1: #0228dd;
+$delice2: #0670f3;
+$delice3: #229df9;
+/*variables couleurs pour la palette du goût*/
+$palette1: #3e923a;
+$palette2: #beff7f;
+*
+{
+    margin: 0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
 
+}
 title
 {
     display: none;
 }
-*
+/*mise en forme page d'accueil"*/
+header
 {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-}
-.logo
-{
-    background-color: #569c87;
-    justify-content: center;
-    align-items: center;
-    h1
-    {
-        margin-bottom: 20px;
-        margin-top: 20px;
-        color: #fdcb46;
-        font-size: 3em;
-        font-family: 'embrionic', Verdana, sans-serif;
-    }
 
-}
-.menu
-{
-    flex-flow: row wrap;
-    justify-content: space-around;
-    &__note
+    .logo
     {
-        background-color: #fdc0dc;
-        height: 400px;
-        width: 200px;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        .fa-music
+        background-color: $fond;
+        font-family: 'embrionic';
+        font-size: 2.5em;
+        color: $lettre;
+        h1
         {
-            color: orange;
-            font-size: 4em;
-            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin-bottom: 20px;
+            margin-top: 20px;
         }
-        .h2
-        {
-            text-decoration: none;
-            font-size: 2em;
-            font-family: 'devonshire', Verdana, sans-serif;
-        }
-        p
-        {
-            text-decoration: none;
-            font-size: 4em;
-        }
+
     }
-    &__chic
+    .menu
     {
-        background-color: #ecbef0;
-        border: 2px solid #724c70;
-        height: 400px;
-        width: 200px;
-        justify-content: center;
-        align-items: center;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        a
+        {
+            text-decoration: none;
+            font-style: none;
+        }
+        &__note
+        {
+            background-color: $fond_note;
+            text-decoration: none;
+            font-style: none;
+            h2
+            {
+                font-family: 'devonshire';
+                font-size: 1.5em;
+                color: $lettre_note;
+            }
+            p
+            {
+                font-family: 'sfcartoonisthand';
+                color: $lettre_note;
+            }
+            
+        }
     }
 }

@@ -1,18 +1,96 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'defonarts_bold';
+  src: url("font/defonarts bold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'embrionic';
   src: url("font/embrionic55.otf") format("otf"), url("font/embrionic55swash.otf") format("otf"), url("font/embrionic85.otf") format("otf"), url("font/embrionic85swash.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'devonshire';
+  font-family: 'appsil';
+  src: url("font/appsilbi.ttf") format("ttf"), url("font/appsili.ttf") format("ttf"), url("font/appsilr.ttftf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'charissil-b';
+  src: url("font/charissil-b.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'croissantone-regular';
+  src: url("font/croissantone-regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dancing-script';
+  src: url("font/dancing-script.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'devonshire-regular';
   src: url("font/devonshire-regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
-title {
-  display: none;
+@font-face {
+  font-family: 'handlee-regular';
+  src: url("font/Handlee-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'kaushanscript-regular';
+  src: url("font/kaushanscript-regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'perfect_font_cc';
+  src: url("font/perfect_font_cc.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  src: url("font/PTSerif-Bold.ttf") format("ttf"), url("font/PTSerif-Bolditalic.ttf") format("ttf"), url("font/PTSerif-Italic.ttf") format("ttf"), url("font/PTSerif-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sfcartoonisthand';
+  src: url("font/sfcartoonisthand.ttf") format("ttf"), url("font/sfcartoonisthand-bold.ttf") format("ttf"), url("font/sfcartoonisthand-bolditalic.ttf") format("ttf"), url("font/sfcartoonisthand-italic.ttf") format("ttf"), url("font/sfcartoonisthandsc.ttf") format("ttf"), url("font/sfcartoonisthandsc-bold.ttf") format("ttf"), url("font/sfcartoonisthandsc-boldital.ttf") format("ttf"), url("font/sfcartoonisthandsc-italic.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*variables couleurs pour le header et footer*/
+/*variables couleurs pour la note enchantée*/
+/*variables couleurs pour le chic a la française*/
+/*variables couleurs pour le délice des papilles*/
+/*variables couleurs pour la palette du goût*/
 * {
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,77 +98,61 @@ title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0;
-  padding: 0;
 }
 
-.logo {
-  background-color: #569c87;
+title {
+  display: none;
+}
+
+/*mise en forme page d'accueil"*/
+header .logo {
+  background-color: #579c87;
+  font-family: 'embrionic';
+  font-size: 2.5em;
+  color: #fdcb46;
+}
+
+header .logo h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.logo h1 {
+  padding: 0;
   margin-bottom: 20px;
   margin-top: 20px;
-  color: #fdcb46;
-  font-size: 3em;
-  font-family: 'embrionic', Verdana, sans-serif;
 }
 
-.menu {
+header .menu {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.menu__note {
-  background-color: #fdc0dc;
-  height: 400px;
-  width: 200px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+header .menu a {
   text-decoration: none;
+  font-style: none;
 }
 
-.menu__note .fa-music {
-  color: orange;
-  font-size: 4em;
+header .menu__note {
+  background-color: #fcdfdb;
   text-decoration: none;
+  font-style: none;
 }
 
-.menu__note .h2 {
-  text-decoration: none;
-  font-size: 2em;
-  font-family: 'devonshire', Verdana, sans-serif;
+header .menu__note h2 {
+  font-family: 'devonshire';
+  font-size: 1.5em;
+  color: #3c1218;
 }
 
-.menu__note p {
-  text-decoration: none;
-  font-size: 4em;
-}
-
-.menu__chic {
-  background-color: #ecbef0;
-  border: 2px solid #724c70;
-  height: 400px;
-  width: 200px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+header .menu__note p {
+  font-family: 'sfcartoonisthand';
+  color: #3c1218;
 }
 /*# sourceMappingURL=style.css.map */
