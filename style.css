@@ -42,7 +42,7 @@
 }
 
 @font-face {
-  font-family: 'devonshire-regular';
+  font-family: 'devonshire';
   src: url("font/devonshire-regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
@@ -108,7 +108,7 @@ title {
 header .logo {
   background-color: #579c87;
   font-family: 'embrionic';
-  font-size: 2.5em;
+  font-size: 2.5rem;
   color: #fdcb46;
 }
 
@@ -124,35 +124,163 @@ header .logo h1 {
   margin-top: 20px;
 }
 
-header .menu {
+.menu {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-header .menu a {
+.menu a {
   text-decoration: none;
   font-style: none;
 }
 
-header .menu__note {
+.menu__note {
   background-color: #fcdfdb;
   text-decoration: none;
   font-style: none;
+  height: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header .menu__note h2 {
+.menu__note h2 {
   font-family: 'devonshire';
-  font-size: 1.5em;
+  font-size: 2rem;
   color: #3c1218;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-header .menu__note p {
+.menu__note p {
   font-family: 'sfcartoonisthand';
   color: #3c1218;
+  font-size: 2.5rem;
+}
+
+.menu__chic {
+  font-family: 'croissantone-regular';
+  text-decoration: none;
+  font-style: none;
+  height: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__chic h2 {
+  font-family: 'croissantone-regular';
+  font-size: 2rem;
+  color: #c67412;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.menu__chic p {
+  font-family: 'croissantone-regular';
+  color: #A56799;
+  font-size: 2.5rem;
+}
+
+.menu__delice {
+  font-family: 'dancing-script';
+  text-decoration: none;
+  font-style: none;
+  height: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__delice h2 {
+  font-family: 'dancing-script';
+  font-size: 2rem;
+  color: #0228dd;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.menu__delice p {
+  font-family: 'defonarts_bold';
+  color: #229df9;
+  font-size: 2.5rem;
+}
+
+.menu__palette {
+  font-family: 'kaushanscript-regular';
+  text-decoration: none;
+  font-style: none;
+  height: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__palette h2 {
+  font-family: 'kaushanscript-regular';
+  font-size: 2rem;
+  color: #3e923a;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.menu__palette p {
+  font-family: 'kaushanscript-regular';
+  color: #beff7f;
+  font-size: 2.5rem;
+}
+
+.next {
+  border: 1 solid #579c87;
+  background-color: #579c87;
+  font-family: 'perfect_font_cc';
+  color: #fdcb46;
+  border-radius: 10px;
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5rem;
+  text-decoration: none;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.foot {
+  background-color: #579c87;
+  color: #fdcb46;
+  font-family: 'perfect_font_cc';
+  font-size: 3rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50px;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
