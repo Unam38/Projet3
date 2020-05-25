@@ -1,11 +1,5 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'defonarts_bold';
-  src: url("font/defonarts bold.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kaushan+Script|Noto+Serif|Roboto&display=swap");
 @font-face {
   font-family: 'embrionic';
   src: url("font/embrionic55.otf") format("otf"), url("font/embrionic55swash.otf") format("otf"), url("font/embrionic85.otf") format("otf"), url("font/embrionic85swash.otf") format("otf");
@@ -14,71 +8,15 @@
 }
 
 @font-face {
-  font-family: 'appsil';
-  src: url("font/appsilbi.ttf") format("ttf"), url("font/appsili.ttf") format("ttf"), url("font/appsilr.ttftf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'charissil-b';
-  src: url("font/charissil-b.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'croissantone-regular';
-  src: url("font/croissantone-regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'dancing-script';
-  src: url("font/dancing-script.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'devonshire';
-  src: url("font/devonshire-regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'handlee-regular';
-  src: url("font/Handlee-Regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'kaushanscript-regular';
-  src: url("font/kaushanscript-regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'perfect_font_cc';
-  src: url("font/perfect_font_cc.ttf") format("ttf");
+  src: url("font/perfect_font_cc.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PTSerif';
-  src: url("font/PTSerif-Bold.ttf") format("ttf"), url("font/PTSerif-Bolditalic.ttf") format("ttf"), url("font/PTSerif-Italic.ttf") format("ttf"), url("font/PTSerif-Regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'sfcartoonisthand';
-  src: url("font/sfcartoonisthand.ttf") format("ttf"), url("font/sfcartoonisthand-bold.ttf") format("ttf"), url("font/sfcartoonisthand-bolditalic.ttf") format("ttf"), url("font/sfcartoonisthand-italic.ttf") format("ttf"), url("font/sfcartoonisthandsc.ttf") format("ttf"), url("font/sfcartoonisthandsc-bold.ttf") format("ttf"), url("font/sfcartoonisthandsc-boldital.ttf") format("ttf"), url("font/sfcartoonisthandsc-italic.ttf") format("ttf");
+  src: url("font/PTSerif-Bold.ttf") format("truetype"), url("font/PTSerif-Bolditalic.ttf") format("truetype"), url("font/PTSerif-Italic.ttf") format("truetype"), url("font/PTSerif-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -88,6 +26,7 @@
 /*variables couleurs pour le chic a la française*/
 /*variables couleurs pour le délice des papilles*/
 /*variables couleurs pour la palette du goût*/
+/*variable couleur pour le shadow*/
 * {
   margin: 0;
   padding: 0;
@@ -108,8 +47,10 @@ title {
 header .logo {
   background-color: #579c87;
   font-family: 'embrionic';
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #fdcb46;
+  width: 100%;
+  position: fixed;
 }
 
 header .logo h1 {
@@ -131,149 +72,175 @@ header .logo h1 {
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 150px;
 }
 
 .menu a {
   text-decoration: none;
-  font-style: none;
 }
 
 .menu__note {
   background-color: #fcdfdb;
-  text-decoration: none;
-  font-style: none;
-  height: 300px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 1px 1px 20px #ac8ab9;
+          box-shadow: 1px 1px 20px #ac8ab9;
+  height: 500px;
+  width: 350px;
+  margin-bottom: 20%;
+  margin-top: 10%;
+}
+
+.menu__note .fa-music {
+  color: #f6916a;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .menu__note h2 {
-  font-family: 'devonshire';
+  font-family: 'Devonshire';
   font-size: 2rem;
   color: #3c1218;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .menu__note p {
-  font-family: 'sfcartoonisthand';
+  font-family: 'segoe print';
+  text-transform: uppercase;
+  font-weight: bold;
   color: #3c1218;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .menu__chic {
-  font-family: 'croissantone-regular';
-  text-decoration: none;
-  font-style: none;
-  height: 300px;
+  background-color: #fff5fe;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 1px 1px 20px #ac8ab9;
+          box-shadow: 1px 1px 20px #ac8ab9;
+  height: 500px;
+  width: 350px;
+  margin-bottom: 20%;
+  margin-top: 10%;
 }
 
 .menu__chic h2 {
-  font-family: 'croissantone-regular';
-  font-size: 2rem;
-  color: #c67412;
-  margin-right: 10px;
-  margin-left: 10px;
+  font-family: 'Croissant One', sans-serif;
+  font-size: 1.5rem;
+  color: #A56799;
 }
 
 .menu__chic p {
-  font-family: 'croissantone-regular';
-  color: #A56799;
-  font-size: 2.5rem;
+  font-family: 'Noto Serif', sans-serif;
+  color: #c67412;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .menu__delice {
-  font-family: 'dancing-script';
-  text-decoration: none;
-  font-style: none;
-  height: 300px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 1px 1px 20px #ac8ab9;
+          box-shadow: 1px 1px 20px #ac8ab9;
+  height: 500px;
+  width: 350px;
+  margin-bottom: 20%;
+  margin-top: 10%;
 }
 
 .menu__delice h2 {
-  font-family: 'dancing-script';
+  font-family: 'Dancing Script', sans-serif;
   font-size: 2rem;
   color: #0228dd;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .menu__delice p {
-  font-family: 'defonarts_bold';
+  font-family: 'segoe print', sans-serif;
   color: #229df9;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .menu__palette {
-  font-family: 'kaushanscript-regular';
-  text-decoration: none;
-  font-style: none;
-  height: 300px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 1px 1px 20px #ac8ab9;
+          box-shadow: 1px 1px 20px #ac8ab9;
+  height: 500px;
+  width: 350px;
+  margin-bottom: 20%;
+  margin-top: 10%;
 }
 
 .menu__palette h2 {
-  font-family: 'kaushanscript-regular';
+  font-family: 'Kaushan Script', sans-serif;
   font-size: 2rem;
   color: #3e923a;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .menu__palette p {
-  font-family: 'kaushanscript-regular';
+  font-family: 'Segoe print', sans-serif;
   color: #beff7f;
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+
+.next, .foot {
+  background-color: #579c87;
+  font-family: 'perfect_font_cc', sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-style: none;
+}
+
+.next a, .foot a {
+  text-decoration: none;
+  color: #fdcb46;
 }
 
 .next {
   border: 1 solid #579c87;
-  background-color: #579c87;
-  font-family: 'perfect_font_cc';
-  color: #fdcb46;
-  border-radius: 10px;
-  width: 30%;
+  border-radius: 20px;
+  width: 35%;
+  font-size: 2.5rem;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2.5rem;
-  text-decoration: none;
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .foot {
-  background-color: #579c87;
-  color: #fdcb46;
-  font-family: 'perfect_font_cc';
-  font-size: 3rem;
+  font-size: 1.8rem;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -281,6 +248,5 @@ header .logo h1 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 50px;
-  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

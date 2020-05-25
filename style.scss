@@ -1,9 +1,5 @@
-@font-face {
-    font-family: 'defonarts_bold';
-    src: url('font/defonarts bold.otf') format('otf');
-        font-weight: normal;
-        font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kaushan+Script|Noto+Serif|Roboto&display=swap');
+
 @font-face {
     font-family: 'embrionic';
     src: url('font/embrionic55.otf') format('otf'),
@@ -14,74 +10,17 @@
         font-style: normal;
 }
 @font-face {
-    font-family: 'appsil';
-    src: url('font/appsilbi.ttf') format('ttf'),
-    url('font/appsili.ttf') format('ttf'),
-    url('font/appsilr.ttftf') format('ttf');
-        font-weight: normal;
-        font-style: normal;
-}
-@font-face {
-    font-family: 'charissil-b';
-    src: url('font/charissil-b.ttf') format('ttf');
-        font-weight: normal;
-        font-style: normal;
-}
-@font-face {
-    font-family: 'croissantone-regular';
-    src: url('font/croissantone-regular.ttf') format('ttf');
-        font-weight: normal;
-        font-style: normal;
-}
-@font-face {
-    font-family: 'dancing-script';
-    src: url('font/dancing-script.ttf') format('ttf');
-        font-weight: normal;
-        font-style: normal;
-}
-@font-face {
-    font-family: 'devonshire';
-    src: url('font/devonshire-regular.ttf') format('ttf');
-        font-weight: normal;
-        font-style: normal;
-}
-@font-face {
-    font-family: 'handlee-regular';
-    src: url('font/Handlee-Regular.ttf') format('ttf');
-        font-weight: normal;
-        font-style: normal;
-}
-@font-face {
-    font-family: 'kaushanscript-regular';
-    src: url('font/kaushanscript-regular.ttf') format('ttf');
-        font-weight: normal;
-        font-style: normal;
-}
-@font-face {
     font-family: 'perfect_font_cc';
-    src: url('font/perfect_font_cc.ttf') format('ttf');
+    src: url('font/perfect_font_cc.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
 }
 @font-face {
     font-family: 'PTSerif';
-    src: url('font/PTSerif-Bold.ttf') format('ttf'),
-    url('font/PTSerif-Bolditalic.ttf') format('ttf'),
-    url('font/PTSerif-Italic.ttf') format('ttf'),
-    url('font/PTSerif-Regular.ttf') format('ttf');
-        font-weight: normal;
-        font-style: normal;
-}
-@font-face {
-    font-family: 'sfcartoonisthand';
-    src: url('font/sfcartoonisthand.ttf') format('ttf'),
-    url('font/sfcartoonisthand-bold.ttf') format('ttf'),
-    url('font/sfcartoonisthand-bolditalic.ttf') format('ttf'),
-    url('font/sfcartoonisthand-italic.ttf') format('ttf'),
-    url('font/sfcartoonisthandsc.ttf') format('ttf'),
-    url('font/sfcartoonisthandsc-bold.ttf') format('ttf'),
-    url('font/sfcartoonisthandsc-boldital.ttf') format('ttf'),
-    url('font/sfcartoonisthandsc-italic.ttf') format('ttf');
+    src: url('font/PTSerif-Bold.ttf') format('truetype'),
+    url('font/PTSerif-Bolditalic.ttf') format('truetype'),
+    url('font/PTSerif-Italic.ttf') format('truetype'),
+    url('font/PTSerif-Regular.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
 }
@@ -97,6 +36,7 @@ $grad2_note: #f6916a;
 $lettre_chic1: #c67412;
 $lettre_chic2: #A56799;
 $lettre_chic3: #6e4ccc;
+$fond-chic: #fff5fe;
 /*variables couleurs pour le délice des papilles*/
 $delice1: #0228dd;
 $delice2: #0670f3;
@@ -104,6 +44,8 @@ $delice3: #229df9;
 /*variables couleurs pour la palette du goût*/
 $palette1: #3e923a;
 $palette2: #beff7f;
+/*variable couleur pour le shadow*/
+$shadow: #ac8ab9;
 *
 {
     margin: 0;
@@ -116,15 +58,25 @@ title
     display: none;
 }
 /*mise en forme page d'accueil"*/
+@mixin menu_nav {
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px $shadow;
+    height: 500px;
+    width: 350px;
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
 header
 {
-
     .logo
     {
         background-color: $fond;
         font-family: 'embrionic';
-        font-size: 2.5rem;
+        font-size: 3rem;
         color: $lettre;
+        width: 100%;
+        position: fixed;
         h1
         {
             justify-content: center;
@@ -133,140 +85,130 @@ header
             margin-bottom: 20px;
             margin-top: 20px;
         }
-
     }
 }
 .menu
 {
     flex-flow: row wrap;
     justify-content: space-around;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 150px;
     a
     {
         text-decoration: none;
-        font-style: none;
     }
     &__note
     {
         background-color: $fond_note;
-        text-decoration: none;
-        font-style: none;
-        height: 300px;
-        justify-content: center;
-        align-items: center;
+        @include menu_nav;
+        .fa-music
+        {
+            color: $grad2_note;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
         h2
         {
-            font-family: 'devonshire';
+            font-family: 'Devonshire';
             font-size: 2rem;
             color: $lettre_note;
-            margin-right: 10px;
-            margin-left: 10px;
         }
         p
         {
-            font-family: 'sfcartoonisthand';
+            font-family: 'segoe print';
+            text-transform: uppercase;
+            font-weight: bold;
             color: $lettre_note; 
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
-        
     }
     &__chic
     {
-        font-family: 'croissantone-regular';
-        text-decoration: none;
-        font-style: none;
-        height: 300px;
-        justify-content: center;
-        align-items: center;
+        background-color: $fond-chic;
+        @include menu_nav;
         h2
         {
-            font-family: 'croissantone-regular';
-            font-size: 2rem;
-            color: $lettre_chic1;
-            margin-right: 10px;
-            margin-left: 10px;
+            font-family: 'Croissant One', sans-serif;
+            font-size: 1.5rem;
+            color: $lettre_chic2;
         }
         p
         {
-            font-family: 'croissantone-regular';
-            color: $lettre_chic2;
-            font-size: 2.5rem;
+            font-family: 'Noto Serif', sans-serif;
+            color: $lettre_chic1;
+            font-size: 3rem;
+            font-weight: bold;
         }
     }
     &__delice
     {
-        font-family: 'dancing-script';
-        text-decoration: none;
-        font-style: none;
-        height: 300px;
-        justify-content: center;
-        align-items: center;
+        @include menu_nav;
         h2
         {
-            font-family: 'dancing-script';
+            font-family: 'Dancing Script', sans-serif;
             font-size: 2rem;
             color: $delice1;
-            margin-right: 10px;
-            margin-left: 10px;
         }
         p
         {
-            font-family: 'defonarts_bold';
+            font-family: 'segoe print', sans-serif;
             color: $delice3;
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
     }
     &__palette
     {
-        font-family: 'kaushanscript-regular';
-        text-decoration: none;
-        font-style: none;
-        height: 300px;
-        justify-content: center;
-        align-items: center;
+       
+        @include menu_nav;
         h2
         {
-            font-family: 'kaushanscript-regular';
+            font-family: 'Kaushan Script', sans-serif;
             font-size: 2rem;
             color: $palette1;
-            margin-right: 10px;
-            margin-left: 10px;
         }
         p
         {
-            font-family: 'kaushanscript-regular';
+            font-family: 'Segoe print', sans-serif;
             color: $palette2;
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
     }
 }
+.next, .foot
+{
+    background-color: $fond;
+    font-family: 'perfect_font_cc', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-style: none;
+    a
+    {
+        text-decoration: none;
+        color: $lettre;
+    }
+}
+
 .next
 {
     border: 1 solid $fond;
-    background-color: $fond;
-    font-family: 'perfect_font_cc';
-    color: $lettre;
-    border-radius: 10px;
-    width: 30%;
-    justify-content: center;
-    align-items: center;
+    border-radius: 20px;
+    width: 35%;
     font-size: 2.5rem;
-    text-decoration: none;
     margin-left: 35%;
     margin-right: 35%;
     margin-bottom: 20px;
     margin-top: 20px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 .foot
 {
-    background-color: $fond;
-    color: $lettre;
-    font-family: 'perfect_font_cc';
-    font-size: 3rem;
+    font-size: 1.8rem;
     flex-direction: row;
     justify-content: space-around;
     height: 50px;
-    text-decoration: none;
 }
 
