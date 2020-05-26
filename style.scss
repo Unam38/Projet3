@@ -65,7 +65,6 @@ title
     height: 500px;
     width: 350px;
     margin-bottom: 20%;
-    margin-top: 10%;
 }
 header
 {
@@ -76,7 +75,6 @@ header
         font-size: 3rem;
         color: $lettre;
         width: 100%;
-        position: fixed;
         h1
         {
             justify-content: center;
@@ -93,7 +91,7 @@ header
     justify-content: space-around;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 150px;
+    margin-top: 50px;
     a
     {
         text-decoration: none;
@@ -178,37 +176,61 @@ header
 .next, .foot
 {
     background-color: $fond;
-    font-family: 'perfect_font_cc', sans-serif;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+    font-family: 'perfect_font_cc';
     font-style: none;
-    a
-    {
-        text-decoration: none;
-        color: $lettre;
-    }
+    color: $lettre;
 }
 
 .next
 {
+    display: block;
     border: 1 solid $fond;
-    border-radius: 20px;
-    width: 35%;
+    border-radius: 10px;
+    width: 40%;
     font-size: 2.5rem;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    margin: 20px 35% 20px 35%;
+    p
+    {
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .foot
 {
     font-size: 1.8rem;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 50px;
+    bottom: 0;
+    width: 100%;
+    a
+    {
+        text-decoration: none;
+        color: $lettre;
+        align-items: center;
+        margin: 10px 30px 10px 30px;
+    }
+}
+/*mise en forme menu La note enchantée*/
+#note
+{
+    background-color: $fond_note;
+}
+.titre1
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .fa-music
+    {
+        font-size: 4rem;
+        color: $grad1_note;
+    }
+    h1
+    {
+        font-family: 'devonshire';
+        color: $lettre_note;
+    }
 }
 

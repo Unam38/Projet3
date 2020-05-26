@@ -50,7 +50,6 @@ header .logo {
   font-size: 3rem;
   color: #fdcb46;
   width: 100%;
-  position: fixed;
 }
 
 header .logo h1 {
@@ -74,7 +73,7 @@ header .logo h1 {
       justify-content: space-around;
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .menu a {
@@ -94,7 +93,6 @@ header .logo h1 {
   height: 500px;
   width: 350px;
   margin-bottom: 20%;
-  margin-top: 10%;
 }
 
 .menu__note .fa-music {
@@ -130,7 +128,6 @@ header .logo h1 {
   height: 500px;
   width: 350px;
   margin-bottom: 20%;
-  margin-top: 10%;
 }
 
 .menu__chic h2 {
@@ -158,7 +155,6 @@ header .logo h1 {
   height: 500px;
   width: 350px;
   margin-bottom: 20%;
-  margin-top: 10%;
 }
 
 .menu__delice h2 {
@@ -185,7 +181,6 @@ header .logo h1 {
   height: 500px;
   width: 350px;
   margin-bottom: 20%;
-  margin-top: 10%;
 }
 
 .menu__palette h2 {
@@ -202,35 +197,25 @@ header .logo h1 {
 
 .next, .foot {
   background-color: #579c87;
-  font-family: 'perfect_font_cc', sans-serif;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
+  font-family: 'perfect_font_cc';
   font-style: none;
-}
-
-.next a, .foot a {
-  text-decoration: none;
   color: #fdcb46;
 }
 
 .next {
+  display: block;
   border: 1 solid #579c87;
-  border-radius: 20px;
-  width: 35%;
+  border-radius: 10px;
+  width: 40%;
   font-size: 2.5rem;
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px 35% 20px 35%;
+}
+
+.next p {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -245,8 +230,48 @@ header .logo h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 50px;
+  bottom: 0;
+  width: 100%;
+}
+
+.foot a {
+  text-decoration: none;
+  color: #fdcb46;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 30px 10px 30px;
+}
+
+/*mise en forme menu La note enchantée*/
+#note {
+  background-color: #fcdfdb;
+}
+
+.titre1 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titre1 .fa-music {
+  font-size: 4rem;
+  color: #f04c5f;
+}
+
+.titre1 h1 {
+  font-family: 'devonshire';
+  color: #3c1218;
 }
 /*# sourceMappingURL=style.css.map */
