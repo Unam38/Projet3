@@ -96,14 +96,17 @@ header .logo h1 {
 }
 
 .menu__note .fa-music {
-  color: #f6916a;
   font-size: 3rem;
   margin-bottom: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#f04c5f), to(#f6916a));
+  background: linear-gradient(left, #f04c5f, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu__note h2 {
   font-family: 'Devonshire';
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #3c1218;
 }
 
@@ -132,8 +135,11 @@ header .logo h1 {
 
 .menu__chic h2 {
   font-family: 'Croissant One', sans-serif;
-  font-size: 1.5rem;
-  color: #A56799;
+  font-size: 1.8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#c67412), to(#6e4ccc));
+  background: linear-gradient(left, #c67412, #6e4ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu__chic p {
@@ -159,8 +165,13 @@ header .logo h1 {
 
 .menu__delice h2 {
   font-family: 'Dancing Script', sans-serif;
-  font-size: 2rem;
-  color: #0228dd;
+  font-size: 1.8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#0228dd), to(#229df9));
+  background: linear-gradient(left, #0228dd, #229df9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .menu__delice p {
@@ -185,8 +196,11 @@ header .logo h1 {
 
 .menu__palette h2 {
   font-family: 'Kaushan Script', sans-serif;
-  font-size: 2rem;
-  color: #3e923a;
+  font-size: 2.5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#3e923a), to(#beff7f));
+  background: linear-gradient(left, #3e923a, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu__palette p {
@@ -224,6 +238,33 @@ header .logo h1 {
           align-items: center;
 }
 
+.next p span {
+  -webkit-animation: bounce 0.35s ease infinite alternate;
+          animation: bounce 0.35s ease infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
 .foot {
   font-size: 1.8rem;
   -webkit-box-orient: horizontal;
@@ -245,6 +286,109 @@ header .logo h1 {
       -ms-flex-align: center;
           align-items: center;
   margin: 10px 30px 10px 30px;
+}
+
+.foot a:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  /* When the animation is finished, start again */
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 /*mise en forme menu La note enchantée*/

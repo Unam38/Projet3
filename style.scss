@@ -102,14 +102,17 @@ header
         @include menu_nav;
         .fa-music
         {
-            color: $grad2_note;
             font-size: 3rem;
             margin-bottom: 10px;
+            background: -webkit-linear-gradient(left, $grad1_note, $grad2_note);
+            background: linear-gradient(left, $grad1_note, $grad2_note);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         h2
         {
             font-family: 'Devonshire';
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: $lettre_note;
         }
         p
@@ -128,8 +131,11 @@ header
         h2
         {
             font-family: 'Croissant One', sans-serif;
-            font-size: 1.5rem;
-            color: $lettre_chic2;
+            font-size: 1.8rem;
+            background: -webkit-linear-gradient(left, $lettre_chic1, $lettre_chic3);
+            background: linear-gradient(left, $lettre_chic1, $lettre_chic3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         p
         {
@@ -145,8 +151,13 @@ header
         h2
         {
             font-family: 'Dancing Script', sans-serif;
-            font-size: 2rem;
-            color: $delice1;
+            font-size: 1.8rem;
+            background: -webkit-linear-gradient(left, $delice1, $delice3);
+            background: linear-gradient(left, $delice1, $delice3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-left: 20px;
+            margin-right: 10px;
         }
         p
         {
@@ -162,8 +173,11 @@ header
         h2
         {
             font-family: 'Kaushan Script', sans-serif;
-            font-size: 2rem;
-            color: $palette1;
+            font-size: 2.5rem;
+            background: -webkit-linear-gradient(left, $palette1, $palette2);
+            background: linear-gradient(left, $palette1, $palette2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         p
         {
@@ -194,6 +208,13 @@ header
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
+        span {
+            animation: bounce 0.35s ease infinite alternate;
+        }
+        @keyframes bounce{
+             from {transform: translateY(0);}
+             to   {transform: translateY(-10px);}
+        }
     }
 }
 .foot
@@ -210,6 +231,28 @@ header
         color: $lettre;
         align-items: center;
         margin: 10px 30px 10px 30px;
+        &:hover
+        {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.5s;
+
+        /* When the animation is finished, start again */
+         animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
     }
 }
 /*mise en forme menu La note enchantée*/
