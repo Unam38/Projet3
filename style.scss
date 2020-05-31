@@ -29,7 +29,8 @@ $fond: #579c87;
 $lettre: #fdcb46;
 /*variables couleurs pour la note enchantée*/
 $lettre_note: #3c1218;
-$fond_note: #fcdfdb;
+$fond_note1: #fcdfbd;
+$fond_note2: #fcdfbd7a;
 $grad1_note: #f04c5f;
 $grad2_note: #f6916a;
 /*variables couleurs pour le chic a la française*/
@@ -98,8 +99,17 @@ header
     }
     &__note
     {
-        background-color: $fond_note;
+        background-color: $fond_note1;
         @include menu_nav;
+        transition: transform 400ms;
+        opacity: 1;
+        &:hover
+        {
+            transform: scale(1.2);
+            box-shadow: none;
+            opacity: 0.5;
+            background-color: -radial-gradient(center, transparent,$fond_note1);
+        }
         .fa-music
         {
             font-size: 3rem;
@@ -128,6 +138,14 @@ header
     {
         background-color: $fond-chic;
         @include menu_nav;
+        transition: transform 400ms;
+        opacity: 1;
+        &:hover
+        {
+            transform: scale(1.2);
+            box-shadow: none;
+            opacity: 0.5;
+        }
         h2
         {
             font-family: 'Croissant One', sans-serif;
@@ -148,6 +166,14 @@ header
     &__delice
     {
         @include menu_nav;
+        transition: transform 400ms;
+        opacity: 1;
+        &:hover
+        {
+            transform: scale(1.2);
+            box-shadow: none;
+            opacity: 0.5;
+        }
         h2
         {
             font-family: 'Dancing Script', sans-serif;
@@ -168,8 +194,15 @@ header
     }
     &__palette
     {
-       
         @include menu_nav;
+        transition: transform 400ms;
+        opacity: 1;
+        &:hover
+        {
+            transform: scale(1.2);
+            box-shadow: none;
+            opacity: 0.5;
+        }
         h2
         {
             font-family: 'Kaushan Script', sans-serif;
@@ -258,7 +291,7 @@ header
 /*mise en forme menu La note enchantée*/
 #note
 {
-    background-color: $fond_note;
+    background-color: $fond_note1;
 }
 .titre1
 {
