@@ -1,52 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kaushan+Script|Noto+Serif|Roboto&display=swap');
+@import "./utils/_Tipography";
+@import "./utils/_variables";
+@import "./utils/_mixins";
 
-@font-face {
-    font-family: 'embrionic';
-    src: url('font/embrionic55.otf') format('otf'),
-    url('font/embrionic55swash.otf') format('otf'),
-    url('font/embrionic85.otf') format('otf'),
-    url('font/embrionic85swash.otf') format('otf');
-        font-weight: normal;
-        font-style: normal;
-}
-@font-face {
-    font-family: 'perfect_font_cc';
-    src: url('font/perfect_font_cc.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-}
-@font-face {
-    font-family: 'PTSerif';
-    src: url('font/PTSerif-Bold.ttf') format('truetype'),
-    url('font/PTSerif-Bolditalic.ttf') format('truetype'),
-    url('font/PTSerif-Italic.ttf') format('truetype'),
-    url('font/PTSerif-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-}
-/*variables couleurs pour le header et footer*/
-$fond: #579c87;
-$lettre: #fdcb46;
-/*variables couleurs pour la note enchantée*/
-$lettre_note: #3c1218;
-$fond_note1: #fcdfbd;
-$fond_note2: #fcdfbd7a;
-$grad1_note: #f04c5f;
-$grad2_note: #f6916a;
-/*variables couleurs pour le chic a la française*/
-$lettre_chic1: #c67412;
-$lettre_chic2: #A56799;
-$lettre_chic3: #6e4ccc;
-$fond-chic: #fff5fe;
-/*variables couleurs pour le délice des papilles*/
-$delice1: #0228dd;
-$delice2: #0670f3;
-$delice3: #229df9;
-/*variables couleurs pour la palette du goût*/
-$palette1: #3e923a;
-$palette2: #beff7f;
-/*variable couleur pour le shadow*/
-$shadow: #ac8ab9;
 *
 {
     margin: 0;
@@ -58,15 +13,7 @@ title
 {
     display: none;
 }
-/*mise en forme page d'accueil"*/
-@mixin menu_nav {
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 20px $shadow;
-    height: 500px;
-    width: 350px;
-    margin-bottom: 20%;
-}
+
 header
 {
     .logo
@@ -114,8 +61,8 @@ header
         {
             font-size: 3rem;
             margin-bottom: 10px;
-            background: -webkit-linear-gradient(left, $grad1_note, $grad2_note);
-            background: linear-gradient(left, $grad1_note, $grad2_note);
+            background-clip: linear-gradient(left, $grad1_note, $grad2_note);
+            background-clip: linear-gradient(left, $grad1_note, $grad2_note);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }

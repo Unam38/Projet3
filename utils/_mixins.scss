@@ -1,0 +1,9 @@
+/*mise en forme page d'accueil"*/
+@mixin menu_nav {
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px $shadow;
+    height: 500px;
+    width: 350px;
+    margin-bottom: 20%;
+}
