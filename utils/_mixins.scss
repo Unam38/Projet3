@@ -7,3 +7,9 @@
     width: 350px;
     margin-bottom: 20%;
 }
+@mixin note_gradient {
+    background: -webkit-linear-gradient(left, $grad1_note, $grad2_note);
+            background: linear-gradient(left, $grad1_note, $grad2_note);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}

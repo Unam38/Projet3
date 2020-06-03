@@ -35,10 +35,11 @@ header
 }
 .menu
 {
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin-left: 15%;
-    margin-right: 15%;
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr;
+    grid-gap: 2fr, 2fr;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 50px;
     a
     {
@@ -48,23 +49,11 @@ header
     {
         background-color: $fond_note1;
         @include menu_nav;
-        transition: transform 400ms;
-        opacity: 1;
-        &:hover
-        {
-            transform: scale(1.2);
-            box-shadow: none;
-            opacity: 0.5;
-            background-color: -radial-gradient(center, transparent,$fond_note1);
-        }
         .fa-music
         {
             font-size: 3rem;
             margin-bottom: 10px;
-            background-clip: linear-gradient(left, $grad1_note, $grad2_note);
-            background-clip: linear-gradient(left, $grad1_note, $grad2_note);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            @include note_gradient;
         }
         h2
         {
@@ -80,19 +69,23 @@ header
             color: $lettre_note; 
             font-size: 3rem;
         }
+        &__zoom {
+            justify-content: center;
+            align-items: center;
+            transition: transform 400ms;
+            opacity: 1;
+                &:hover
+                {
+                    transform: scale(1.2);
+                    box-shadow: none;
+                    opacity: 0.6;
+                }
+        }
     }
     &__chic
     {
         background-color: $fond-chic;
         @include menu_nav;
-        transition: transform 400ms;
-        opacity: 1;
-        &:hover
-        {
-            transform: scale(1.2);
-            box-shadow: none;
-            opacity: 0.5;
-        }
         h2
         {
             font-family: 'Croissant One', sans-serif;
@@ -109,18 +102,22 @@ header
             font-size: 3rem;
             font-weight: bold;
         }
+        &__zoom {
+            justify-content: center;
+            align-items: center;
+            transition: transform 400ms;
+            opacity: 1;
+                &:hover
+                {
+                    transform: scale(1.2);
+                    box-shadow: none;
+                    opacity: 0.6;
+                }
+        }
     }
     &__delice
     {
         @include menu_nav;
-        transition: transform 400ms;
-        opacity: 1;
-        &:hover
-        {
-            transform: scale(1.2);
-            box-shadow: none;
-            opacity: 0.5;
-        }
         h2
         {
             font-family: 'Dancing Script', sans-serif;
@@ -138,18 +135,22 @@ header
             color: $delice3;
             font-size: 3rem;
         }
+        &__zoom {
+            justify-content: center;
+            align-items: center;
+            transition: transform 400ms;
+            opacity: 1;
+                &:hover
+                {
+                    transform: scale(1.2);
+                    box-shadow: none;
+                    opacity: 0.6;
+                }
+        }
     }
     &__palette
     {
         @include menu_nav;
-        transition: transform 400ms;
-        opacity: 1;
-        &:hover
-        {
-            transform: scale(1.2);
-            box-shadow: none;
-            opacity: 0.5;
-        }
         h2
         {
             font-family: 'Kaushan Script', sans-serif;
@@ -165,6 +166,18 @@ header
             color: $palette2;
             font-size: 3rem;
         }
+        &__zoom {
+            justify-content: center;
+            align-items: center;
+            transition: transform 400ms;
+            opacity: 1;
+                &:hover
+                {
+                    transform: scale(1.2);
+                    box-shadow: none;
+                    opacity: 0.6;
+                }
+        }
     }
 }
 .next, .foot
@@ -174,7 +187,12 @@ header
     font-style: none;
     color: $lettre;
 }
-
+.prochainement
+{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
 .next
 {
     display: block;
@@ -203,6 +221,7 @@ header
     flex-direction: row;
     justify-content: space-between;
     height: 50px;
+    position: fixed;
     bottom: 0;
     width: 100%;
     a
@@ -213,11 +232,8 @@ header
         margin: 10px 30px 10px 30px;
         &:hover
         {
-        /* Start the shake animation and make the animation last for 0.5 seconds */
         animation: shake 0.5s;
-
-        /* When the animation is finished, start again */
-         animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
         }
 
         @keyframes shake {
@@ -236,19 +252,24 @@ header
     }
 }
 /*mise en forme menu La note enchantée*/
-#note
+#page__note
 {
     background-color: $fond_note1;
+}
+a {
+    text-decoration: none;
+    color: $lettre;
 }
 .titre1
 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
     .fa-music
     {
-        font-size: 4rem;
-        color: $grad1_note;
+        font-size: 3rem;
+        @include note_gradient;
     }
     h1
     {
@@ -256,4 +277,53 @@ header
         color: $lettre_note;
     }
 }
+.soustitre {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'segoe print';
+    color: $lettre_note;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    &__entrée {
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: 'segoe print';
+        color: $lettre_note;
+    }
+    &__prix__note {
+        font-weight: bold;
+    }
+    &__plats {
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: 'segoe print';
+        color: $lettre_note;
+    }
+    &__desserts {
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: 'segoe print';
+        color: $lettre_note;
+        margin-bottom: 20px;
+    }
+}
+.bas_de_page
+    {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: 'devonshire';
+        margin-bottom: 60px;
+        .fa-music {
+            @include note_gradient;
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        h3
+        {
+            font-size: 1.5em;
+            color: $lettre_note;
+        }
+    }
 
