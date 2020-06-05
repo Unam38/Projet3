@@ -1,4 +1,3 @@
-/*mise en forme page d'accueil"*/
 @mixin menu_nav {
     justify-content: center;
     align-items: center;
@@ -9,7 +8,46 @@
 }
 @mixin note_gradient {
     background: -webkit-linear-gradient(left, $grad1_note, $grad2_note);
-            background: linear-gradient(left, $grad1_note, $grad2_note);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+    background: linear-gradient(left, $grad1_note, $grad2_note);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin chic-gradient {
+    background: -webkit-linear-gradient(left, $lettre_chic1, $lettre_chic3);
+    background: linear-gradient(left, $lettre_chic1, $lettre_chic3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin delice_gradient {
+    background: -webkit-linear-gradient(left, $delice1, $delice3);
+    background: linear-gradient(left, $delice1, $delice3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin palette_gradient {
+    background: -webkit-linear-gradient(left, $palette1, $palette2);
+    background: linear-gradient(left, $palette1, $palette2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin soustitre($colour){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $colour;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+@mixin menu {
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'defonartsregular';
+}
+@mixin plats($colour) {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: $colour;
+    margin-left: 10%;
+    margin-right: 10%;
 }

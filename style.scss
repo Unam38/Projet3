@@ -63,7 +63,7 @@ header
         }
         p
         {
-            font-family: 'segoe print';
+            font-family: 'defonartsregular';
             text-transform: uppercase;
             font-weight: bold;
             color: $lettre_note; 
@@ -90,10 +90,7 @@ header
         {
             font-family: 'Croissant One', sans-serif;
             font-size: 1.8rem;
-            background: -webkit-linear-gradient(left, $lettre_chic1, $lettre_chic3);
-            background: linear-gradient(left, $lettre_chic1, $lettre_chic3);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+           @include chic_gradient;
         }
         p
         {
@@ -122,16 +119,13 @@ header
         {
             font-family: 'Dancing Script', sans-serif;
             font-size: 1.8rem;
-            background: -webkit-linear-gradient(left, $delice1, $delice3);
-            background: linear-gradient(left, $delice1, $delice3);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            @include delice_gradient;
             margin-left: 20px;
             margin-right: 10px;
         }
         p
         {
-            font-family: 'segoe print', sans-serif;
+            font-family: 'defonartsregular', sans-serif;
             color: $delice3;
             font-size: 3rem;
         }
@@ -155,14 +149,11 @@ header
         {
             font-family: 'Kaushan Script', sans-serif;
             font-size: 2.5rem;
-            background: -webkit-linear-gradient(left, $palette1, $palette2);
-            background: linear-gradient(left, $palette1, $palette2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            @include palette_gradient;
         }
         p
         {
-            font-family: 'Segoe print', sans-serif;
+            font-family: 'defonartsregular', sans-serif;
             color: $palette2;
             font-size: 3rem;
         }
@@ -268,62 +259,183 @@ a {
     margin-top: 20px;
     .fa-music
     {
-        font-size: 3rem;
+        font-size: 3.5rem;
         @include note_gradient;
     }
     h1
     {
         font-family: 'devonshire';
+        font-size: 3rem;
         color: $lettre_note;
     }
 }
+.container {
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 2rem;
+}
 .soustitre {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'segoe print';
-    color: $lettre_note;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    
+    font-family: 'defonartsregular';
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    @include soustitre($lettre_note);
+    img {
+        padding: none;
+        margin: none;
+    }
     &__entrée {
-        flex-direction: row;
-        justify-content: space-around;
-        font-family: 'segoe print';
-        color: $lettre_note;
+        @include menu;
+        margin-left: 10px;
     }
     &__prix__note {
         font-weight: bold;
+        margin-right: 10px;
     }
     &__plats {
-        flex-direction: row;
-        justify-content: space-around;
-        font-family: 'segoe print';
+        @include menu;
         color: $lettre_note;
+        margin-left: 10px;
     }
     &__desserts {
-        flex-direction: row;
-        justify-content: space-around;
-        font-family: 'segoe print';
+        @include menu;
         color: $lettre_note;
         margin-bottom: 20px;
+        margin-left: 10px;
     }
 }
 .bas_de_page
+{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'devonshire';
+    margin-bottom: 60px;
+    .fa-music {
+        @include note_gradient;
+        font-size: 2.5em;
+        margin-right: 10px;
+    }
+    h3
     {
-        flex-direction: row;
+        font-size: 2.5em;
+        color: $lettre_note;
+    }
+}
+#page_chic {
+    .titre2 {
+        @include chic_gradient;
         justify-content: center;
         align-items: center;
-        font-family: 'devonshire';
-        margin-bottom: 60px;
-        .fa-music {
-            @include note_gradient;
-            font-size: 1.5em;
-            margin-right: 10px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 1.5em;
+        font-family: 'Croissant one'
+    }
+    .soustitre1 {
+        @include soustitre($lettre_chic1);
+        font-size: 1.5rem;
+        font-family: 'PTSerif';
+        margin-left: 5%;
+        margin-right: 5%;
+        h2 {
+        font-family: 'PTSerif';
         }
-        h3
-        {
-            font-size: 1.5em;
-            color: $lettre_note;
+        &__entrees {
+            @include plats($lettre_chic1);
+            font-family: 'PTSerif';
+        }
+        &__plats {
+            @include plats($lettre_chic2);
+            font-family: 'PTSerif';
+        }
+        &__desserts {
+            @include plats($lettre_chic3);
+            font-family: 'PTSerif';
+            margin-bottom: 100px;
+        }
+        &__prix {
+            font-weight: bold;
         }
     }
-
+    .soustitre2 {
+        @include soustitre($lettre_chic2);
+        font-family: 'PTSerif';
+        font-size: 1.5rem;
+    }
+    .soustitre3 {
+        @include soustitre($lettre_chic3);
+        font-family: 'PTSerif';
+        font-size: 1.5rem;
+    }
+}
+#page_delice {
+    .titre-D {
+        @include delice_gradient;
+        font-family: 'Dancing Script';
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+    .soustitreD {
+        @include soustitre(black);
+        font-family: 'defonartsregular';
+        justify-content: space-around;
+        h2 {
+        font-family: 'defonartsregular';
+        }
+        &__plats {
+            @include plats(black);
+        }
+        &__prix {
+            font-weight: bold;
+        }
+        &__desserts {
+            @include plats(black);
+            margin-bottom: 100px;
+        }
+    }
+    .containerD
+    {
+        margin-bottom: 100px;
+    }
+}
+#page_palette {
+    .titreP {
+        justify-content: center;
+        align-items: center;
+        @include palette_gradient;
+        h2 {
+            font-family: 'Kaushan Script';
+            font-size: 3rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+            }
+        }
+    .soustitreP {
+        @include soustitre(black);
+        font-family: 'defonartsregular';
+        justify-content: space-around;
+        h3 {
+        font-family: 'defonartsregular';
+        }
+        &__plats {
+            @include plats(black);
+        }
+        &__prix {
+            font-weight: bold;
+        }
+        &__desserts {
+            @include plats(black);
+            margin-bottom: 100px;
+        }
+    }
+    .containerP
+    {
+        margin-bottom: 100px;
+    }
+}

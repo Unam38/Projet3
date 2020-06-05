@@ -2,21 +2,28 @@
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kaushan+Script|Noto+Serif|Roboto&display=swap");
 @font-face {
   font-family: 'embrionic';
-  src: url("/utils/font/embrionic55.otf") format("otf"), url("font/embrionic55swash.otf") format("otf"), url("font/embrionic85.otf") format("otf"), url("font/embrionic85swash.otf") format("otf");
+  src: url("./utils/font/embrionic55.otf") format("otf"), url("./utils/font/embrionic55swash.otf") format("otf"), url("./utils/font/embrionic85.otf") format("otf"), url("./utils/font/embrionic85swash.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'perfect_font_cc';
-  src: url("/utils/font/perfect_font_cc.ttf") format("truetype");
+  src: url("./utils/font/perfect_font_cc.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PTSerif';
-  src: url("/utils/font/PTSerif-Bold.ttf") format("truetype"), url("font/PTSerif-Bolditalic.ttf") format("truetype"), url("font/PTSerif-Italic.ttf") format("truetype"), url("font/PTSerif-Regular.ttf") format("truetype");
+  src: url("./utils/font/PTSerif-Bold.ttf") format("truetype"), url("./utils/font/PTSerif-Bolditalic.ttf") format("truetype"), url("./utils/font/PTSerif-Italic.ttf") format("truetype"), url("./utils/font/PTSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'defonartsregular';
+  src: url("./utils/font/defonarts_bold-webfont.woff2") format("woff2"), url("./utils/font/defonarts_bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -27,7 +34,6 @@
 /*variables couleurs pour le délice des papilles*/
 /*variables couleurs pour la palette du goût*/
 /*variable couleur pour le shadow*/
-/*mise en forme page d'accueil"*/
 * {
   margin: 0;
   padding: 0;
@@ -110,7 +116,7 @@ header .logo h1 {
 }
 
 .menu__note p {
-  font-family: 'segoe print';
+  font-family: 'defonartsregular';
   text-transform: uppercase;
   font-weight: bold;
   color: #3c1218;
@@ -218,7 +224,7 @@ header .logo h1 {
 }
 
 .menu__delice p {
-  font-family: 'segoe print', sans-serif;
+  font-family: 'defonartsregular', sans-serif;
   color: #229df9;
   font-size: 3rem;
 }
@@ -269,7 +275,7 @@ header .logo h1 {
 }
 
 .menu__palette p {
-  font-family: 'Segoe print', sans-serif;
+  font-family: 'defonartsregular', sans-serif;
   color: #beff7f;
   font-size: 3rem;
 }
@@ -512,7 +518,7 @@ a {
 }
 
 .titre1 .fa-music {
-  font-size: 3rem;
+  font-size: 3.5rem;
   background: -webkit-gradient(linear, left top, right top, from(#f04c5f), to(#f6916a));
   background: linear-gradient(left, #f04c5f, #f6916a);
   -webkit-background-clip: text;
@@ -521,23 +527,43 @@ a {
 
 .titre1 h1 {
   font-family: 'devonshire';
+  font-size: 3rem;
   color: #3c1218;
 }
 
+.container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+  line-height: 2rem;
+}
+
 .soustitre {
+  font-family: 'defonartsregular';
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'segoe print';
   color: #3c1218;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.soustitre img {
+  padding: none;
+  margin: none;
 }
 
 .soustitre__entrée {
@@ -545,14 +571,16 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-family: 'segoe print';
-  color: #3c1218;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'defonartsregular';
+  margin-left: 10px;
 }
 
 .soustitre__prix__note {
   font-weight: bold;
+  margin-right: 10px;
 }
 
 .soustitre__plats {
@@ -560,10 +588,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-family: 'segoe print';
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'defonartsregular';
   color: #3c1218;
+  margin-left: 10px;
 }
 
 .soustitre__desserts {
@@ -571,11 +601,13 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-family: 'segoe print';
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'defonartsregular';
   color: #3c1218;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .bas_de_page {
@@ -598,12 +630,300 @@ a {
   background: linear-gradient(left, #f04c5f, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.5em;
+  font-size: 2.5em;
   margin-right: 10px;
 }
 
 .bas_de_page h3 {
-  font-size: 1.5em;
+  font-size: 2.5em;
   color: #3c1218;
+}
+
+#page_chic .titre2 {
+  background: -webkit-gradient(linear, left top, right top, from(#c67412), to(#6e4ccc));
+  background: linear-gradient(left, #c67412, #6e4ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 1.5em;
+  font-family: 'Croissant one';
+}
+
+#page_chic .soustitre1 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #c67412;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 1.5rem;
+  font-family: 'PTSerif';
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#page_chic .soustitre1 h2 {
+  font-family: 'PTSerif';
+}
+
+#page_chic .soustitre1__entrees {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  color: #c67412;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'PTSerif';
+}
+
+#page_chic .soustitre1__plats {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  color: #A56799;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'PTSerif';
+}
+
+#page_chic .soustitre1__desserts {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  color: #6e4ccc;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'PTSerif';
+  margin-bottom: 100px;
+}
+
+#page_chic .soustitre1__prix {
+  font-weight: bold;
+}
+
+#page_chic .soustitre2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #A56799;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: 'PTSerif';
+  font-size: 1.5rem;
+}
+
+#page_chic .soustitre3 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6e4ccc;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: 'PTSerif';
+  font-size: 1.5rem;
+}
+
+#page_delice .titre-D {
+  background: -webkit-gradient(linear, left top, right top, from(#0228dd), to(#229df9));
+  background: linear-gradient(left, #0228dd, #229df9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Dancing Script';
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+#page_delice .soustitreD {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: 'defonartsregular';
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#page_delice .soustitreD h2 {
+  font-family: 'defonartsregular';
+}
+
+#page_delice .soustitreD__plats {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#page_delice .soustitreD__prix {
+  font-weight: bold;
+}
+
+#page_delice .soustitreD__desserts {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 100px;
+}
+
+#page_delice .containerD {
+  margin-bottom: 100px;
+}
+
+#page_palette .titreP {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#3e923a), to(#beff7f));
+  background: linear-gradient(left, #3e923a, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#page_palette .titreP h2 {
+  font-family: 'Kaushan Script';
+  font-size: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+#page_palette .soustitreP {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: 'defonartsregular';
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#page_palette .soustitreP h3 {
+  font-family: 'defonartsregular';
+}
+
+#page_palette .soustitreP__plats {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#page_palette .soustitreP__prix {
+  font-weight: bold;
+}
+
+#page_palette .soustitreP__desserts {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 100px;
+}
+
+#page_palette .containerP {
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=style.css.map */

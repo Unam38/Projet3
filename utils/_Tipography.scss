@@ -2,25 +2,32 @@
 
 @font-face {
     font-family: 'embrionic';
-    src: url('/utils/font/embrionic55.otf') format('otf'),
-    url('font/embrionic55swash.otf') format('otf'),
-    url('font/embrionic85.otf') format('otf'),
-    url('font/embrionic85swash.otf') format('otf');
+    src: url('./utils/font/embrionic55.otf') format('otf'),
+    url('./utils/font/embrionic55swash.otf') format('otf'),
+    url('./utils/font/embrionic85.otf') format('otf'),
+    url('./utils/font/embrionic85swash.otf') format('otf');
         font-weight: normal;
         font-style: normal;
 }
 @font-face {
     font-family: 'perfect_font_cc';
-    src: url('/utils/font/perfect_font_cc.ttf') format('truetype');
+    src: url('./utils/font/perfect_font_cc.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
 }
 @font-face {
     font-family: 'PTSerif';
-    src: url('/utils/font/PTSerif-Bold.ttf') format('truetype'),
-    url('font/PTSerif-Bolditalic.ttf') format('truetype'),
-    url('font/PTSerif-Italic.ttf') format('truetype'),
-    url('font/PTSerif-Regular.ttf') format('truetype');
+    src: url('./utils/font/PTSerif-Bold.ttf') format('truetype'),
+    url('./utils/font/PTSerif-Bolditalic.ttf') format('truetype'),
+    url('./utils/font/PTSerif-Italic.ttf') format('truetype'),
+    url('./utils/font/PTSerif-Regular.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
+}
+@font-face {
+    font-family: 'defonartsregular';
+    src: url('./utils/font/defonarts_bold-webfont.woff2') format('woff2'),
+         url('./utils/font/defonarts_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
