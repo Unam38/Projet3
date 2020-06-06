@@ -116,7 +116,7 @@ header .logo h1 {
 }
 
 .menu__note p {
-  font-family: 'defonartsregular';
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   color: #3c1218;
@@ -224,7 +224,7 @@ header .logo h1 {
 }
 
 .menu__delice p {
-  font-family: 'defonartsregular', sans-serif;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
   color: #229df9;
   font-size: 3rem;
 }
@@ -275,7 +275,7 @@ header .logo h1 {
 }
 
 .menu__palette p {
-  font-family: 'defonartsregular', sans-serif;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
   color: #beff7f;
   font-size: 3rem;
 }
@@ -542,7 +542,7 @@ a {
 }
 
 .soustitre {
-  font-family: 'defonartsregular';
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -576,11 +576,13 @@ a {
           justify-content: space-between;
   font-family: 'defonartsregular';
   margin-left: 10px;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
 .soustitre__prix__note {
   font-weight: bold;
   margin-right: 10px;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
 .soustitre__plats {
@@ -594,6 +596,7 @@ a {
   font-family: 'defonartsregular';
   color: #3c1218;
   margin-left: 10px;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
 .soustitre__desserts {
@@ -608,6 +611,7 @@ a {
   color: #3c1218;
   margin-bottom: 20px;
   margin-left: 10px;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
 .bas_de_page {
@@ -796,13 +800,13 @@ a {
   color: black;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-family: 'defonartsregular';
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
 #page_delice .soustitreD h2 {
-  font-family: 'defonartsregular';
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
 #page_delice .soustitreD__plats {
@@ -817,10 +821,12 @@ a {
   color: black;
   margin-left: 10%;
   margin-right: 10%;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
 #page_delice .soustitreD__prix {
   font-weight: bold;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
 #page_delice .soustitreD__desserts {
@@ -836,6 +842,7 @@ a {
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 100px;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
 #page_delice .containerD {
@@ -881,13 +888,13 @@ a {
   color: black;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-family: 'defonartsregular';
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
 #page_palette .soustitreP h3 {
-  font-family: 'defonartsregular';
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
 #page_palette .soustitreP__plats {
@@ -902,10 +909,12 @@ a {
   color: black;
   margin-left: 10%;
   margin-right: 10%;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
 #page_palette .soustitreP__prix {
   font-weight: bold;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
 #page_palette .soustitreP__desserts {
@@ -921,6 +930,7 @@ a {
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 100px;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
 #page_palette .containerP {

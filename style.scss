@@ -63,7 +63,7 @@ header
         }
         p
         {
-            font-family: 'defonartsregular';
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
             text-transform: uppercase;
             font-weight: bold;
             color: $lettre_note; 
@@ -125,7 +125,7 @@ header
         }
         p
         {
-            font-family: 'defonartsregular', sans-serif;
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
             color: $delice3;
             font-size: 3rem;
         }
@@ -153,7 +153,7 @@ header
         }
         p
         {
-            font-family: 'defonartsregular', sans-serif;
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
             color: $palette2;
             font-size: 3rem;
         }
@@ -277,7 +277,7 @@ a {
 }
 .soustitre {
     
-    font-family: 'defonartsregular';
+    font-family: 'segoe print', 'defonartsregular', sans-serif;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -289,21 +289,25 @@ a {
     &__entrée {
         @include menu;
         margin-left: 10px;
+        font-family: 'segoe print', 'defonartsregular', sans-serif;
     }
     &__prix__note {
         font-weight: bold;
         margin-right: 10px;
+        font-family: 'segoe print', 'defonartsregular', sans-serif;
     }
     &__plats {
         @include menu;
         color: $lettre_note;
         margin-left: 10px;
+        font-family: 'segoe print', 'defonartsregular', sans-serif;
     }
     &__desserts {
         @include menu;
         color: $lettre_note;
         margin-bottom: 20px;
         margin-left: 10px;
+        font-family: 'segoe print', 'defonartsregular', sans-serif;
     }
 }
 .bas_de_page
@@ -382,20 +386,23 @@ a {
     }
     .soustitreD {
         @include soustitre(black);
-        font-family: 'defonartsregular';
+        font-family: 'segoe print', 'defonartsregular', sans-serif;
         justify-content: space-around;
         h2 {
-        font-family: 'defonartsregular';
+        font-family: 'segoe print', 'defonartsregular', sans-serif;
         }
         &__plats {
             @include plats(black);
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
         }
         &__prix {
             font-weight: bold;
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
         }
         &__desserts {
             @include plats(black);
             margin-bottom: 100px;
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
         }
     }
     .containerD
@@ -418,20 +425,23 @@ a {
         }
     .soustitreP {
         @include soustitre(black);
-        font-family: 'defonartsregular';
+        font-family: 'segoe print', 'defonartsregular', sans-serif;
         justify-content: space-around;
         h3 {
-        font-family: 'defonartsregular';
+        font-family: 'segoe print', 'defonartsregular', sans-serif;
         }
         &__plats {
             @include plats(black);
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
         }
         &__prix {
             font-weight: bold;
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
         }
         &__desserts {
             @include plats(black);
             margin-bottom: 100px;
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
         }
     }
     .containerP
