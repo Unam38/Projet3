@@ -262,7 +262,7 @@ a {
         font-size: 3.5rem;
         @include note_gradient;
     }
-    h1
+    h2
     {
         font-family: 'devonshire';
         font-size: 3rem;
@@ -285,6 +285,9 @@ a {
     img {
         padding: none;
         margin: none;
+    }
+    h3 {
+        @include soulignement($lettre_note);
     }
     &__entrée {
         @include menu;
@@ -322,7 +325,7 @@ a {
         font-size: 2.5em;
         margin-right: 10px;
     }
-    h3
+    h4
     {
         font-size: 2.5em;
         color: $lettre_note;
@@ -344,8 +347,9 @@ a {
         font-family: 'PTSerif';
         margin-left: 5%;
         margin-right: 5%;
-        h2 {
+        h3 {
         font-family: 'PTSerif';
+        @include soulignement($lettre_chic1);
         }
         &__entrees {
             @include plats($lettre_chic1);
@@ -368,11 +372,17 @@ a {
         @include soustitre($lettre_chic2);
         font-family: 'PTSerif';
         font-size: 1.5rem;
+        h3 {
+            @include soulignement($lettre_chic2);
+        }
     }
     .soustitre3 {
         @include soustitre($lettre_chic3);
         font-family: 'PTSerif';
         font-size: 1.5rem;
+        h3 {
+            @include soulignement($lettre_chic3);
+        }
     }
 }
 #page_delice {
@@ -384,12 +394,13 @@ a {
         align-items: center;
         margin-top: 5%;
     }
-    .soustitreD {
+    .soustitreD1 {
         @include soustitre(black);
         font-family: 'segoe print', 'defonartsregular', sans-serif;
         justify-content: space-around;
-        h2 {
-        font-family: 'segoe print', 'defonartsregular', sans-serif;
+        h3 {
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
+            @include soulignement($delice1);
         }
         &__plats {
             @include plats(black);
@@ -403,6 +414,25 @@ a {
             @include plats(black);
             margin-bottom: 100px;
             font-family: 'segoe print', 'defonartsregular', sans-serif;
+        }
+        
+    }
+    .soustitreD2 {
+        @include soustitre(black);
+        font-family: 'segoe print', 'defonartsregular', sans-serif;
+        justify-content: space-around;
+        h3 {
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
+            @include soulignement($delice2);
+        }
+    }
+    .soustitreD3 {
+        @include soustitre(black);
+        font-family: 'segoe print', 'defonartsregular', sans-serif;
+        justify-content: space-around;
+        h3 {
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
+            @include soulignement($delice3);
         }
     }
     .containerD
@@ -429,6 +459,7 @@ a {
         justify-content: space-around;
         h3 {
         font-family: 'segoe print', 'defonartsregular', sans-serif;
+        @include soulignement($palette1);
         }
         &__plats {
             @include plats(black);

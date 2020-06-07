@@ -525,7 +525,7 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-.titre1 h1 {
+.titre1 h2 {
   font-family: 'devonshire';
   font-size: 3rem;
   color: #3c1218;
@@ -564,6 +564,17 @@ a {
 .soustitre img {
   padding: none;
   margin: none;
+}
+
+.soustitre h3 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#3c1218), color-stop(10%, #3c1218), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
+}
+
+.soustitre h3:hover {
+  background-size: 100% 100%;
 }
 
 .soustitre__entrée {
@@ -638,7 +649,7 @@ a {
   margin-right: 10px;
 }
 
-.bas_de_page h3 {
+.bas_de_page h4 {
   font-size: 2.5em;
   color: #3c1218;
 }
@@ -680,8 +691,16 @@ a {
   margin-right: 5%;
 }
 
-#page_chic .soustitre1 h2 {
+#page_chic .soustitre1 h3 {
   font-family: 'PTSerif';
+  background: -webkit-gradient(linear, left bottom, left top, from(#c67412), color-stop(10%, #c67412), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #c67412 0%, #c67412 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
+}
+
+#page_chic .soustitre1 h3:hover {
+  background-size: 100% 100%;
 }
 
 #page_chic .soustitre1__entrees {
@@ -752,6 +771,17 @@ a {
   font-size: 1.5rem;
 }
 
+#page_chic .soustitre2 h3 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#A56799), color-stop(10%, #A56799), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #A56799 0%, #A56799 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
+}
+
+#page_chic .soustitre2 h3:hover {
+  background-size: 100% 100%;
+}
+
 #page_chic .soustitre3 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -770,6 +800,17 @@ a {
   font-size: 1.5rem;
 }
 
+#page_chic .soustitre3 h3 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#6e4ccc), color-stop(10%, #6e4ccc), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
+}
+
+#page_chic .soustitre3 h3:hover {
+  background-size: 100% 100%;
+}
+
 #page_delice .titre-D {
   background: -webkit-gradient(linear, left top, right top, from(#0228dd), to(#229df9));
   background: linear-gradient(left, #0228dd, #229df9);
@@ -786,7 +827,7 @@ a {
   margin-top: 5%;
 }
 
-#page_delice .soustitreD {
+#page_delice .soustitreD1 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -805,11 +846,19 @@ a {
       justify-content: space-around;
 }
 
-#page_delice .soustitreD h2 {
+#page_delice .soustitreD1 h3 {
   font-family: 'segoe print', 'defonartsregular', sans-serif;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0228dd), color-stop(10%, #0228dd), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #0228dd 0%, #0228dd 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
 }
 
-#page_delice .soustitreD__plats {
+#page_delice .soustitreD1 h3:hover {
+  background-size: 100% 100%;
+}
+
+#page_delice .soustitreD1__plats {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -824,12 +873,12 @@ a {
   font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
-#page_delice .soustitreD__prix {
+#page_delice .soustitreD1__prix {
   font-weight: bold;
   font-family: 'segoe print', 'defonartsregular', sans-serif;
 }
 
-#page_delice .soustitreD__desserts {
+#page_delice .soustitreD1__desserts {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -843,6 +892,68 @@ a {
   margin-right: 10%;
   margin-bottom: 100px;
   font-family: 'segoe print', 'defonartsregular', sans-serif;
+}
+
+#page_delice .soustitreD2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#page_delice .soustitreD2 h3 {
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0670f3), color-stop(10%, #0670f3), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #0670f3 0%, #0670f3 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
+}
+
+#page_delice .soustitreD2 h3:hover {
+  background-size: 100% 100%;
+}
+
+#page_delice .soustitreD3 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#page_delice .soustitreD3 h3 {
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
+  background: -webkit-gradient(linear, left bottom, left top, from(#229df9), color-stop(10%, #229df9), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #229df9 0%, #229df9 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
+}
+
+#page_delice .soustitreD3 h3:hover {
+  background-size: 100% 100%;
 }
 
 #page_delice .containerD {
@@ -895,6 +1006,14 @@ a {
 
 #page_palette .soustitreP h3 {
   font-family: 'segoe print', 'defonartsregular', sans-serif;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3e923a), color-stop(10%, #3e923a), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #3e923a 0%, #3e923a 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
+}
+
+#page_palette .soustitreP h3:hover {
+  background-size: 100% 100%;
 }
 
 #page_palette .soustitreP__plats {
