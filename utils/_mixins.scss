@@ -7,26 +7,26 @@
     margin-bottom: 20%;
 }
 @mixin note_gradient {
-    background: -webkit-linear-gradient(left, $grad1_note, $grad2_note);
-    background: linear-gradient(left, $grad1_note, $grad2_note);
+    background: -webkit-linear-gradient(to right, $grad1_note, $grad2_note);
+    background: linear-gradient(to right, $grad1_note, $grad2_note);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 @mixin chic-gradient {
-    background: -webkit-linear-gradient(left, $lettre_chic1, $lettre_chic3);
-    background: linear-gradient(left, $lettre_chic1, $lettre_chic3);
+    background: -webkit-linear-gradient(to right, $lettre_chic1, $lettre_chic3);
+    background: linear-gradient(to right, $lettre_chic1, $lettre_chic3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 @mixin delice_gradient {
-    background: -webkit-linear-gradient(left, $delice1, $delice3);
-    background: linear-gradient(left, $delice1, $delice3);
+    background: -webkit-linear-gradient(to right, $delice1, $delice3);
+    background: linear-gradient(to right, $delice1, $delice3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 @mixin palette_gradient {
-    background: -webkit-linear-gradient(left, $palette1, $palette2);
-    background: linear-gradient(left, $palette1, $palette2);
+    background: -webkit-linear-gradient(to right, $palette1, $palette2);
+    background: linear-gradient(to right, $palette1, $palette2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -58,4 +58,36 @@
     &:hover {
         background-size: 100% 100%;
       }
+}
+@mixin responsive_accueil {
+    @media screen and (max-width: 750px) {
+        #accueil{
+            header{
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                h1{
+                    font-size: 1.5em;
+                }
+            }
+        }
+        nav {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+            &__note{
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+                h2{
+                    font-size: 1.5em;
+                }
+            }
+        }
+        .prochainement{
+            font-size: 1rem;
+        }
+    }
 }
