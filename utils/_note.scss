@@ -6,9 +6,11 @@
     background-color: $fond_note;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 80px;
     @media screen and (min-width: 901px) {
         margin-left: 20px;
         margin-right: 20px;
+        padding-bottom: 5px;
     }
     &__titre {
         display: flex;
@@ -47,8 +49,7 @@
     }
     &__table {
         width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin: 2% 10% 2% 10%;
         @media screen and (max-width: 900px) {
         display: flex;
         flex-direction: row;   
