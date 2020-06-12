@@ -1,20 +1,13 @@
 @mixin nav-menu {
     display: inline-flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 10px $shadow;
     width: 90%;
     height: 350px;
     margin-top: 5%;
     margin-bottom: 5%;
-    opacity: 1;
-    transition: transform 400ms;
-    &:hover {
-        transform: scale(1.2);
-        box-shadow: none;
-        opacity: 0.5;
-    }
 }
 @mixin note-gradient {
     background: -webkit-linear-gradient(to right, $grad1_note, $grad2_note);

@@ -2,36 +2,6 @@
 @import "variables";
 @import "mixins";
 
-*{
-    padding: 0;
-    margin: 0;
-}
-.logo {
-    display: inline-flex;
-    justify-content: center;
-    background-color: $fond;
-    width: 100%;
-    @media screen and (max-width: 900px) {
-        font-size: 1.5em;
-    }
-    @media screen and (min-width: 901px) {
-        font-size: 2.5em;
-    }
-    a {
-        text-decoration: none;
-        font-family: $logo_txt;
-        color: $lettre;
-    }
-}
-.titre-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: 'Noto Serif';
-    font-weight: bold;
-}
 .page-note {
     background-color: $fond_note;
     margin-left: 10px;
@@ -112,32 +82,5 @@
         font-family: $note_titre;
         color: $lettre_note;
         font-size: 2em;
-    }
-}
-.foot {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    margin: 0;
-    height: 60px;
-    width: 100%;
-    background-color: $fond;
-    font-size: 1.3em;
-    a {
-        @include shake;
-        text-decoration: none;
-        color: $lettre;
-        font-family: $footer_txt;
-        .foot__mention {
-            margin-left: 10px;
-            margin-top: 10px;
-        }
-        .mail {
-            margin-right: 10px;
-            margin-top: 10px;
-        }
     }
 }

@@ -38,7 +38,7 @@
 /*variables pour le délice des papilles*/
 /*variables pour la palette du goût*/
 /*variable couleur pour le shadow*/
-* {
+body {
   padding: 0;
   margin: 0;
 }
@@ -86,22 +86,51 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 5%;
+  width: 100%;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 901px) {
   .menu {
-    width: 80%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 30% 30%;
+        grid-template-columns: 30% 30%;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-auto-flow: row;
-    margin-left: 10%;
-    margin-right: 10%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu__note {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .menu__chic {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .menu__delice {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .menu__palette {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 
@@ -114,8 +143,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -125,21 +155,8 @@
   height: 350px;
   margin-top: 5%;
   margin-bottom: 5%;
-  opacity: 1;
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
   background-color: #fcdfdb;
-  line-height: 1em;
-}
-
-.menu__note:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  opacity: 0.5;
+  overflow: hidden;
 }
 
 .menu__note .fa-music {
@@ -153,7 +170,7 @@
 
 .menu__note h2 {
   font-family: "Devonshire";
-  font-size: 2em;
+  font-size: 3em;
   color: #3c1218;
 }
 
@@ -161,8 +178,37 @@
   text-transform: uppercase;
   font-family: 'segoe print', 'defonartsregular', sans-serif;
   color: #3c1218;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
+}
+
+.menu__note__zoom {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.menu__note__zoom:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 0.5;
 }
 
 .menu__chic {
@@ -174,8 +220,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -185,25 +232,13 @@
   height: 350px;
   margin-top: 5%;
   margin-bottom: 5%;
-  opacity: 1;
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
   background-color: #ffe9fd;
-}
-
-.menu__chic:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  opacity: 0.5;
+  overflow: hidden;
 }
 
 .menu__chic h2 {
   font-family: "Croissant One";
-  font-size: 1.5em;
+  font-size: 1.8em;
   background: -webkit-gradient(linear, left top, right top, from(#c67412), to(#6e4ccc));
   background: linear-gradient(to right, #c67412, #6e4ccc);
   -webkit-background-clip: text;
@@ -217,6 +252,8 @@
 
 .menu__delice {
   text-decoration: none;
+  background-color: #edefef;
+  overflow: hidden;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -224,8 +261,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -235,19 +273,6 @@
   height: 350px;
   margin-top: 5%;
   margin-bottom: 5%;
-  opacity: 1;
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
-}
-
-.menu__delice:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  opacity: 0.5;
 }
 
 .menu__delice h2 {
@@ -275,8 +300,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -286,19 +312,7 @@
   height: 350px;
   margin-top: 5%;
   margin-bottom: 5%;
-  opacity: 1;
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
-}
-
-.menu__palette:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  opacity: 0.5;
+  overflow: hidden;
 }
 
 .menu__palette h2 {
@@ -567,56 +581,6 @@
 /*variables pour le délice des papilles*/
 /*variables pour la palette du goût*/
 /*variable couleur pour le shadow*/
-* {
-  padding: 0;
-  margin: 0;
-}
-
-.logo {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #579c87;
-  width: 100%;
-}
-
-@media screen and (max-width: 900px) {
-  .logo {
-    font-size: 1.5em;
-  }
-}
-
-@media screen and (min-width: 901px) {
-  .logo {
-    font-size: 2.5em;
-  }
-}
-
-.logo a {
-  text-decoration: none;
-  font-family: "embrionic";
-  color: #fdcb46;
-}
-
-.titre-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: 'Noto Serif';
-  font-weight: bold;
-}
-
 .page-note {
   background-color: #fcdfdb;
   margin-left: 10px;
@@ -855,99 +819,6 @@
   font-family: "Devonshire";
   color: #3c1218;
   font-size: 2em;
-}
-
-.foot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  bottom: 0;
-  margin: 0;
-  height: 60px;
-  width: 100%;
-  background-color: #579c87;
-  font-size: 1.3em;
-}
-
-.foot a {
-  text-decoration: none;
-  color: #fdcb46;
-  font-family: "perfect_font_cc";
-}
-
-.foot a:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
-.foot a .foot__mention {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-.foot a .mail {
-  margin-right: 10px;
-  margin-top: 10px;
 }
 
 @font-face {
@@ -1375,99 +1246,6 @@
   list-style: none;
 }
 
-.foot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  bottom: 0;
-  margin: 0;
-  height: 60px;
-  width: 100%;
-  background-color: #579c87;
-  font-size: 1.3em;
-}
-
-.foot a {
-  text-decoration: none;
-  color: #fdcb46;
-  font-family: "perfect_font_cc";
-}
-
-.foot a:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
-.foot a .foot__mention {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-.foot a .mail {
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
 @font-face {
   font-family: 'embrionic';
   src: url("./utils/font/embrionic55.otf") format("otf"), url("./utils/font/embrionic55swash.otf") format("otf"), url("./utils/font/embrionic85.otf") format("otf"), url("./utils/font/embrionic85swash.otf") format("otf");
@@ -1502,40 +1280,6 @@
 /*variables pour le délice des papilles*/
 /*variables pour la palette du goût*/
 /*variable couleur pour le shadow*/
-* {
-  padding: 0;
-  margin: 0;
-}
-
-.logo {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #579c87;
-  width: 100%;
-}
-
-@media screen and (max-width: 900px) {
-  .logo {
-    font-size: 1.5em;
-  }
-}
-
-@media screen and (min-width: 901px) {
-  .logo {
-    font-size: 2.5em;
-  }
-}
-
-.logo a {
-  text-decoration: none;
-  font-family: "embrionic";
-  color: #fdcb46;
-}
-
 .titre-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1863,99 +1607,6 @@
   list-style: none;
 }
 
-.foot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  bottom: 0;
-  margin: 0;
-  height: 60px;
-  width: 100%;
-  background-color: #579c87;
-  font-size: 1.3em;
-}
-
-.foot a {
-  text-decoration: none;
-  color: #fdcb46;
-  font-family: "perfect_font_cc";
-}
-
-.foot a:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
-.foot a .foot__mention {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-.foot a .mail {
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
 @font-face {
   font-family: 'embrionic';
   src: url("./utils/font/embrionic55.otf") format("otf"), url("./utils/font/embrionic55swash.otf") format("otf"), url("./utils/font/embrionic85.otf") format("otf"), url("./utils/font/embrionic85swash.otf") format("otf");
@@ -1990,56 +1641,6 @@
 /*variables pour le délice des papilles*/
 /*variables pour la palette du goût*/
 /*variable couleur pour le shadow*/
-* {
-  padding: 0;
-  margin: 0;
-}
-
-.logo {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #579c87;
-  width: 100%;
-}
-
-@media screen and (max-width: 900px) {
-  .logo {
-    font-size: 1.5em;
-  }
-}
-
-@media screen and (min-width: 901px) {
-  .logo {
-    font-size: 2.5em;
-  }
-}
-
-.logo a {
-  text-decoration: none;
-  font-family: "embrionic";
-  color: #fdcb46;
-}
-
-.titre-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: 'Noto Serif';
-  font-weight: bold;
-}
-
 .page-palette {
   margin-left: 5%;
   margin-right: 5%;
@@ -2212,98 +1813,5 @@
       align-self: center;
   font-weight: bold;
   list-style: none;
-}
-
-.foot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  bottom: 0;
-  margin: 0;
-  height: 60px;
-  width: 100%;
-  background-color: #579c87;
-  font-size: 1.3em;
-}
-
-.foot a {
-  text-decoration: none;
-  color: #fdcb46;
-  font-family: "perfect_font_cc";
-}
-
-.foot a:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
-.foot a .foot__mention {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-.foot a .mail {
-  margin-right: 10px;
-  margin-top: 10px;
 }
 /*# sourceMappingURL=main.css.map */
