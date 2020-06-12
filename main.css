@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kaushan+Script|Noto+Serif|Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kaushan+Script|Noto+Serif|Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kaushan+Script|Noto+Serif|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kaushan+Script|Noto+Serif|Roboto&display=swap");
 @font-face {
   font-family: 'embrionic';
   src: url("./utils/font/embrionic55.otf") format("otf"), url("./utils/font/embrionic55swash.otf") format("otf"), url("./utils/font/embrionic85.otf") format("otf"), url("./utils/font/embrionic85swash.otf") format("otf");
@@ -1465,6 +1466,401 @@
 .foot a .mail {
   margin-right: 10px;
   margin-top: 10px;
+}
+
+@font-face {
+  font-family: 'embrionic';
+  src: url("./utils/font/embrionic55.otf") format("otf"), url("./utils/font/embrionic55swash.otf") format("otf"), url("./utils/font/embrionic85.otf") format("otf"), url("./utils/font/embrionic85swash.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'perfect_font_cc';
+  src: url("./utils/font/perfect_font_cc.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  src: url("./utils/font/PTSerif-Bold.ttf") format("truetype"), url("./utils/font/PTSerif-Bolditalic.ttf") format("truetype"), url("./utils/font/PTSerif-Italic.ttf") format("truetype"), url("./utils/font/PTSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'defonartsregular';
+  src: url("./utils/font/defonarts_bold-webfont.woff2") format("woff2"), url("./utils/font/defonarts_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*variables pour le header et footer*/
+/*variables pour la note enchantée*/
+/*variables pour le chic a la française*/
+/*variables pour le délice des papilles*/
+/*variables pour la palette du goût*/
+/*variable couleur pour le shadow*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #579c87;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .logo {
+    font-size: 2.5em;
+  }
+}
+
+.logo a {
+  text-decoration: none;
+  font-family: "embrionic";
+  color: #fdcb46;
+}
+
+.titre-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Noto Serif';
+  font-weight: bold;
+}
+
+.page-delice {
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #edefef;
+}
+
+.page-delice__titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.page-delice__titre h2 {
+  font-family: "Dancing Script";
+  padding-left: 10px;
+  padding-right: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#0228dd), to(#229df9));
+  background: linear-gradient(to right, #0228dd, #229df9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+}
+
+@media screen and (min-width: 901px) {
+  .page-delice__titre h2 {
+    font-size: 2.5em;
+  }
+}
+
+.page-delice__soustitre1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .page-delice__soustitre1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page-delice__soustitre1 img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .page-delice__soustitre1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .page-delice__soustitre1 img {
+    height: 30px;
+    width: 30%;
+  }
+}
+
+.page-delice__soustitre1 h3 {
+  font-size: 1.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0228dd), color-stop(10%, #0228dd), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #0228dd 0%, #0228dd 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
+}
+
+@media screen and (max-width: 900px) {
+  .page-delice__soustitre1 h3 {
+    font-size: 1em;
+  }
+}
+
+.page-delice__soustitre1 h3:hover {
+  background-size: 100% 100%;
+}
+
+.page-delice__soustitre2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .page-delice__soustitre2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page-delice__soustitre2 img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .page-delice__soustitre2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .page-delice__soustitre2 img {
+    height: 30px;
+    width: 30%;
+  }
+}
+
+.page-delice__soustitre2 h3 {
+  font-size: 1.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0670f3), color-stop(10%, #0670f3), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #0670f3 0%, #0670f3 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
+}
+
+@media screen and (max-width: 900px) {
+  .page-delice__soustitre2 h3 {
+    font-size: 1em;
+  }
+}
+
+.page-delice__soustitre2 h3:hover {
+  background-size: 100% 100%;
+}
+
+.page-delice__soustitre3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .page-delice__soustitre3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page-delice__soustitre3 img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .page-delice__soustitre3 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .page-delice__soustitre3 img {
+    height: 30px;
+    width: 30%;
+  }
+}
+
+.page-delice__soustitre3 h3 {
+  font-size: 1.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(#229df9), color-stop(10%, #229df9), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #229df9 0%, #229df9 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
+}
+
+@media screen and (max-width: 900px) {
+  .page-delice__soustitre3 h3 {
+    font-size: 1em;
+  }
+}
+
+.page-delice__soustitre3 h3:hover {
+  background-size: 100% 100%;
+}
+
+.page-delice__table {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 70px;
+  color: black;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  .page-delice__table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.page-delice .plats {
+  list-style: none;
+  font-family: 'segoe print', 'defonartsregular', sans-serif;
+}
+
+@media screen and (min-width: 900px) {
+  .page-delice .plats {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 8fr 1fr;
+        grid-template-columns: 8fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row-align: center;
+        align-self: center;
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .page-delice .plats {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 8fr 1fr;
+        grid-template-columns: 8fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    grid-auto-flow: column;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row-align: center;
+        align-self: center;
+    list-style: none;
+  }
+}
+
+.page-delice .plats__prix {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bold;
+  list-style: none;
 }
 
 .foot {
