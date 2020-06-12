@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $fond;
+    width: 100%;
+    font-family: $logo_txt;
+    color: $lettre;
+    @media screen and (max-width: 900px) {
+        font-size: 1.5em;
+    }
+    @media screen and (min-width: 901px) {
+        font-size: 2.5em;
+    }
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    @media screen and (min-width: 900px) {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-auto-flow: row;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    &__note {
+        text-decoration: none;
+        @include nav-menu;
+        background-color: $fond_note;
+        line-height: 1em;
+        .fa-music {
+            @include note-gradient;
+            font-size: 3em;
+            margin-top: 10px;
+        }
+        h2 {
+            font-family: $note_titre;
+            font-size: 2em;
+            color: $lettre_note;
+        }
+        p {
+            text-transform: uppercase;
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
+            color: $lettre_note;
+            font-size: 3em;
+            font-weight: bold;
+        }
+    }
+    &__chic {
+        text-decoration: none;
+        @include nav-menu;
+        background-color: $fond-chic;
+        h2 {
+            font-family: $chic_titre;
+            font-size: 1.5em;
+            @include chic-gradient;
+        }
+        p {
+            color: $lettre_chic1;
+            font-size: 3.5em;
+        }
+    }
+    &__delice {
+        text-decoration: none;
+        @include nav-menu;
+        h2 {
+            font-family: $delice_titre;
+            font-size: 2em;
+            padding: 5px;
+            @include delice-gradient;
+
+        }
+        p {
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
+            color: $delice3;
+            font-size: 3em;
+        }
+    }
+    &__palette {
+        text-decoration: none;
+        @include nav-menu;
+        h2 {
+            font-family: $palette_titre;
+            font-size: 2em;
+            padding: 5px;
+            @include palette-gradient;
+
+        }
+        p {
+            font-family: 'segoe print', 'defonartsregular', sans-serif;
+            color: $palette1;
+            font-size: 3em;
+        }
+    }
+}
+.next {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 30px;
+    padding: 0;
+}
+.prochainement {
+    background-color: $fond;
+    color: $lettre;
+    font-family: $footer_txt;
+    font-size: 1.5em;
+    border: 1px solid $fond;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    p {
+        display: inline-block;
+        flex-flow:
+        row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: transform 200ms;
+        .dot1 .dot2 .dot3 {
+            animation: bounce 0.35s ease infinite alternate;
+            margin: 0;
+            padding: 0;
+            @keyframes bounce{
+                from {transform: translateY(0);}
+                to   {transform: translateY(-20px);}
+            }
+        } 
+    }
+}
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    background-color: $fond;
+    font-size: 1.3em;
+    a {
+        @include shake;
+        text-decoration: none;
+        color: $lettre;
+        font-family: $footer_txt;
+        .foot__mention {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .mail {
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+    }
+}

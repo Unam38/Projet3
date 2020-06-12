@@ -1,0 +1,28 @@
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    background-color: $fond;
+    font-size: 1.3em;
+    a {
+        @include shake;
+        text-decoration: none;
+        color: $lettre;
+        font-family: $footer_txt;
+        .foot__mention {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .mail {
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+    }
+}
