@@ -377,39 +377,14 @@ body {
   margin-right: 5px;
 }
 
-.next p span {
-  margin: 0;
-  padding: 0;
-  -webkit-animation: bounce 0.35s ease infinite alternate;
-          animation: bounce 0.35s ease infinite alternate;
-}
-
-@-webkit-keyframes bounce {
-  from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  to {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  }
-}
-
-@keyframes bounce {
-  from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  to {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  }
-}
-
 .foot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -420,22 +395,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
-  bottom: 0;
-  margin: 0;
-  width: 100%;
-  height: 60px;
   background-color: #579c87;
 }
 
-.foot a {
+.foot__mention {
   text-decoration: none;
   color: #fdcb46;
   font-family: "perfect_font_cc";
-  font-size: 1.3em;
+  font-size: 1.4em;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 3%;
 }
 
-.foot a:hover {
+.foot__mention:hover {
   -webkit-animation: shake 0.5s;
           animation: shake 0.5s;
   -webkit-animation-iteration-count: infinite;
@@ -487,6 +461,68 @@ body {
     -webkit-transform: translate(1px, -2px) rotate(-1deg);
             transform: translate(1px, -2px) rotate(-1deg);
   }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.foot__mail {
+  text-decoration: none;
+  color: #fdcb46;
+  font-family: "perfect_font_cc";
+  font-size: 1.4em;
+  margin-right: 3%;
+}
+
+.foot__mail:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @keyframes shake {
@@ -940,6 +976,8 @@ body {
 @media screen and (min-width: 901px) {
   .page-chic__titre h2 {
     font-size: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -977,6 +1015,7 @@ body {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    font-size: 1.5em;
   }
 }
 
@@ -1038,6 +1077,7 @@ body {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    font-size: 1.5em;
   }
 }
 
@@ -1099,6 +1139,7 @@ body {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    font-size: 1.5em;
   }
 }
 
