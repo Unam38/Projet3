@@ -403,12 +403,29 @@ body {
   }
 }
 
-.next__dot {
-  display: inline-block;
-  margin: 0px 0px 0px 5px;
+.next__dot1 {
+  margin: 0px 0px 0px 2px;
   padding: 0;
   -webkit-animation: bounce 300ms ease infinite alternate;
           animation: bounce 300ms ease infinite alternate;
+}
+
+.next__dot2 {
+  margin: 0px 0px 0px 2px;
+  padding: 0;
+  -webkit-animation: bounce 300ms ease infinite alternate;
+          animation: bounce 300ms ease infinite alternate;
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.next__dot3 {
+  margin: 0px 0px 0px 2px;
+  padding: 0;
+  -webkit-animation: bounce 300ms ease infinite alternate;
+          animation: bounce 300ms ease infinite alternate;
+  -webkit-animation-delay: 80ms;
+          animation-delay: 80ms;
 }
 
 .foot {
