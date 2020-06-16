@@ -178,3 +178,31 @@
         @include grille-menu3;
     }
 }
+.foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $fond;
+    &__mention {
+        @include shake;
+        text-decoration: none;
+        color: $lettre;
+        font-family: $footer_txt;
+        font-size: 1.4em;
+        justify-content: flex-start;
+        margin-left: 3%;
+    }
+    &__mail {
+        @include shake;
+        text-decoration: none;
+        color: $lettre;
+        font-family: $footer_txt;
+        font-size: 1.4em;
+        margin-right: 3%;
+    }
+}
