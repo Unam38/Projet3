@@ -168,22 +168,19 @@ body {
     }
     @keyframes bounce {
         from {transform: translateY(0);}
-        to {transform: translateY(-8px);}
+        to {transform: translateY(-9px);}
     }
     &__dot1 {
-        margin: 0px 0px 0px 2px;
-        padding: 0;
+        @include dots;
         animation: bounce 300ms ease infinite alternate;
     }
     &__dot2 {
-        margin: 0px 0px 0px 2px;
-        padding: 0;
+        @include dots;
         animation: bounce 300ms ease infinite alternate;
         animation-delay: 50ms;
     }
     &__dot3 {
-        margin: 0px 0px 0px 2px;
-        padding: 0;
+        @include dots;
         animation: bounce 300ms ease infinite alternate;
         animation-delay: 80ms;
     }

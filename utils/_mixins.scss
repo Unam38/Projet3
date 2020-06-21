@@ -118,3 +118,8 @@
         list-style: none;
     }
 }
+@mixin dots {
+    font-weight: bold;
+    margin: 0px 0px 0px 2px;
+    padding: 0;
+}

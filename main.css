@@ -387,8 +387,8 @@ body {
             transform: translateY(0);
   }
   to {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    -webkit-transform: translateY(-9px);
+            transform: translateY(-9px);
   }
 }
 
@@ -398,12 +398,13 @@ body {
             transform: translateY(0);
   }
   to {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    -webkit-transform: translateY(-9px);
+            transform: translateY(-9px);
   }
 }
 
 .next__dot1 {
+  font-weight: bold;
   margin: 0px 0px 0px 2px;
   padding: 0;
   -webkit-animation: bounce 300ms ease infinite alternate;
@@ -411,6 +412,7 @@ body {
 }
 
 .next__dot2 {
+  font-weight: bold;
   margin: 0px 0px 0px 2px;
   padding: 0;
   -webkit-animation: bounce 300ms ease infinite alternate;
@@ -420,6 +422,7 @@ body {
 }
 
 .next__dot3 {
+  font-weight: bold;
   margin: 0px 0px 0px 2px;
   padding: 0;
   -webkit-animation: bounce 300ms ease infinite alternate;
