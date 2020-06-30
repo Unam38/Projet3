@@ -54,7 +54,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #579c87;
+  background-color: #589d88;
   width: 100%;
   font-family: "embrionic";
   color: #fdcb46;
@@ -375,11 +375,11 @@ body {
           align-items: center;
   width: 60%;
   padding: 10px;
-  background-color: #579c87;
+  background-color: #589d88;
   color: #fdcb46;
   font-family: "perfect_font_cc";
   font-size: 1.5em;
-  border: 1px solid #579c87;
+  border: 1px solid #589d88;
   border-radius: 10px;
   margin-bottom: 100px;
 }
@@ -470,7 +470,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #579c87;
+  background-color: #589d88;
 }
 
 .foot a {
@@ -486,10 +486,8 @@ body {
 }
 
 .foot a:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation: shake 0.5s infinite;
+          animation: shake 0.5s infinite;
 }
 
 @-webkit-keyframes shake {
@@ -703,8 +701,8 @@ body {
   font-size: 1.5em;
   background: -webkit-gradient(linear, left bottom, left top, from(#3c1218), color-stop(10%, #3c1218), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  -webkit-transition: background-size .5s;
-  transition: background-size .5s;
+  -webkit-transition: background-size 400ms;
+  transition: background-size 400ms;
 }
 
 .page-note__soustitre h3:hover {
@@ -907,7 +905,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #579c87;
+  background-color: #589d88;
   width: 100%;
 }
 
@@ -1043,8 +1041,8 @@ body {
           align-items: center;
   background: -webkit-gradient(linear, left bottom, left top, from(#c67412), color-stop(10%, #c67412), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #c67412 0%, #c67412 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  -webkit-transition: background-size .5s;
-  transition: background-size .5s;
+  -webkit-transition: background-size 400ms;
+  transition: background-size 400ms;
 }
 
 @media screen and (max-width: 900px) {
@@ -1105,8 +1103,8 @@ body {
           align-items: center;
   background: -webkit-gradient(linear, left bottom, left top, from(#A56799), color-stop(10%, #A56799), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #A56799 0%, #A56799 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  -webkit-transition: background-size .5s;
-  transition: background-size .5s;
+  -webkit-transition: background-size 400ms;
+  transition: background-size 400ms;
 }
 
 @media screen and (max-width: 900px) {
@@ -1167,8 +1165,8 @@ body {
           align-items: center;
   background: -webkit-gradient(linear, left bottom, left top, from(#6e4ccc), color-stop(10%, #6e4ccc), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  -webkit-transition: background-size .5s;
-  transition: background-size .5s;
+  -webkit-transition: background-size 400ms;
+  transition: background-size 400ms;
 }
 
 @media screen and (max-width: 900px) {
@@ -1307,7 +1305,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #579c87;
+  background-color: #589d88;
 }
 
 .foot__mention {
@@ -1322,10 +1320,8 @@ body {
 }
 
 .foot__mention:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation: shake 0.5s infinite;
+          animation: shake 0.5s infinite;
 }
 
 @keyframes shake {
@@ -1384,10 +1380,8 @@ body {
 }
 
 .foot__mail:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation: shake 0.5s infinite;
+          animation: shake 0.5s infinite;
 }
 
 @keyframes shake {
@@ -1593,8 +1587,8 @@ body {
           align-items: center;
   background: -webkit-gradient(linear, left bottom, left top, from(#0228dd), color-stop(10%, #0228dd), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #0228dd 0%, #0228dd 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  -webkit-transition: background-size .5s;
-  transition: background-size .5s;
+  -webkit-transition: background-size 400ms;
+  transition: background-size 400ms;
 }
 
 @media screen and (max-width: 900px) {
@@ -1661,8 +1655,8 @@ body {
           align-items: center;
   background: -webkit-gradient(linear, left bottom, left top, from(#0670f3), color-stop(10%, #0670f3), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #0670f3 0%, #0670f3 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  -webkit-transition: background-size .5s;
-  transition: background-size .5s;
+  -webkit-transition: background-size 400ms;
+  transition: background-size 400ms;
 }
 
 @media screen and (max-width: 900px) {
@@ -1729,8 +1723,8 @@ body {
           align-items: center;
   background: -webkit-gradient(linear, left bottom, left top, from(#229df9), color-stop(10%, #229df9), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #229df9 0%, #229df9 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  -webkit-transition: background-size .5s;
-  transition: background-size .5s;
+  -webkit-transition: background-size 400ms;
+  transition: background-size 400ms;
 }
 
 @media screen and (max-width: 900px) {
@@ -1896,24 +1890,20 @@ body {
   display: flex;
   font-family: 'segoe print', 'defonartsregular', sans-serif;
   color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media screen and (max-width: 900px) {
-  .page-palette__soustitre {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .page-palette__soustitre img {
-    width: 80%;
-  }
+.page-palette__soustitre img {
+  width: 80%;
 }
 
 @media screen and (min-width: 901px) {
@@ -1926,10 +1916,13 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .page-palette__soustitre img {
+    width: 60%;
+  }
 }
 
 .page-palette__soustitre h3 {
-  font-size: 1.5em;
+  font-size: 1em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1938,13 +1931,13 @@ body {
           align-items: center;
   background: -webkit-gradient(linear, left bottom, left top, from(#beff7f), color-stop(10%, #beff7f), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #beff7f 0%, #beff7f 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  -webkit-transition: background-size .5s;
-  transition: background-size .5s;
+  -webkit-transition: background-size 400ms;
+  transition: background-size 400ms;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 901px) {
   .page-palette__soustitre h3 {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 }
 
@@ -2051,7 +2044,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   font-size: 2.5em;
-  text-shadow: 1px 1px 10px #579c87;
+  text-shadow: 1px 1px 10px #589d88;
   color: #fdcb46;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

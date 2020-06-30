@@ -36,8 +36,7 @@
 @mixin shake {
 	&:hover
         {
-        animation: shake 0.5s;
-        animation-iteration-count: infinite;
+        animation: shake 0.5s infinite;
         }
 
         @keyframes shake {
@@ -56,7 +55,7 @@
 }
 @mixin soulignement($colour){
     background: linear-gradient(to top, ($colour) 0%, ($colour) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .5s;
+    transition: background-size 400ms;
       
     &:hover {
         background-size: 100% 100%;
