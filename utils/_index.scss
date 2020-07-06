@@ -62,7 +62,7 @@ body {
         }
         h2 {
             font-family: $note_titre;
-            font-size: 3em;
+            font-size: 2em;
             color: $lettre_note;
             @media screen and (min-width: 901px) and (max-width: 980px) {
                 font-size: 2.5em;
@@ -98,7 +98,7 @@ body {
         overflow: hidden;
         h2 {
             font-family: $chic_titre;
-            font-size: 1.3em;
+            font-size: 1em;
             @include chic-gradient;
         }
         p {
@@ -113,7 +113,7 @@ body {
         @include nav-menu;
         h2 {
             font-family: $delice_titre;
-            font-size: 2em;
+            font-size: 1.5em;
             padding: 5px;
             @include delice-gradient;
             @media screen and (min-width: 901px) and (max-width: 980px) {
@@ -133,7 +133,7 @@ body {
         overflow: hidden;
         h2 {
             font-family: $palette_titre;
-            font-size: 2em;
+            font-size: 1.5em;
             padding: 5px;
             @include palette-gradient;
 
